@@ -1060,5 +1060,155 @@
     ],
     "answerIndex": 2,
     "explanation": "Flowers are the part of the plant where seeds and fruit start to form."
+  },
+  {
+    "id": "l-g3-t2-001",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: leaves are the main part of the plant that catches sunlight.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Leaves are wide and flat so they can catch lots of sunlight to make food."
+  },
+  {
+    "id": "l-g3-t2-002",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: a plant kept in a dark closet for many weeks will grow stronger than one near a window.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without sunlight a plant cannot make enough food, so it gets weaker, not stronger."
+  },
+  {
+    "id": "l-g3-t2-003",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: muscles help your body move by pulling on bones.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Muscles tighten and pull bones, which makes the body bend and move."
+  },
+  {
+    "id": "l-g3-t2-004",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: when you breathe in, your body uses the oxygen from the air.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lungs pull oxygen out of the air so the body can use it for energy."
+  },
+  {
+    "id": "l-g3-t2-005",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: a plant's stem helps carry water from the roots up to the leaves.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "The stem has tiny tubes inside that move water from the roots up to the leaves."
+  },
+  {
+    "id": "l-g3-t2-006",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "What is the main job of the leaves on a plant?",
+    "choices": [
+      "Hold the plant in the soil",
+      "Make food using sunlight",
+      "Soak up water from the dirt",
+      "Store seeds for later"
+    ],
+    "answerIndex": 1,
+    "explanation": "Leaves use sunlight, water, and air to make food for the plant."
+  },
+  {
+    "id": "l-g3-t2-007",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why do many trees lose their leaves in autumn?",
+    "choices": [
+      "The leaves get too heavy from rain",
+      "The tree saves water and energy for the cold winter",
+      "Wind always knocks the leaves off",
+      "Birds eat all the leaves"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dropping leaves helps the tree save water and energy during the cold months."
+  },
+  {
+    "id": "l-g3-t2-008",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which part of your body breaks food into smaller pieces so your body can use it?",
+    "choices": [
+      "Heart",
+      "Lungs",
+      "Stomach",
+      "Skin"
+    ],
+    "answerIndex": 2,
+    "explanation": "The stomach mixes and breaks down food after you swallow it."
+  },
+  {
+    "id": "l-g3-t2-009",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which group of things are all living?",
+    "choices": [
+      "A rock, a cloud, and water",
+      "A tree, a flower, and a person",
+      "A toy, a book, and a chair",
+      "A river, the wind, and the sun"
+    ],
+    "answerIndex": 1,
+    "explanation": "Trees, flowers, and people grow, need food and water, and can make more of themselves."
+  },
+  {
+    "id": "l-g3-t2-010",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "How can seeds from one plant end up far away to grow new plants?",
+    "choices": [
+      "Plants can walk at night",
+      "Wind, water, or animals carry the seeds",
+      "Seeds jump on their own",
+      "Seeds float up into space"
+    ],
+    "answerIndex": 1,
+    "explanation": "Many seeds travel by wind, water, or by sticking to or being eaten by animals."
   }
 ]
