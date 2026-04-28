@@ -1210,5 +1210,157 @@
     ],
     "answerIndex": 1,
     "explanation": "Many seeds travel by wind, water, or by sticking to or being eaten by animals."
+  },
+  {
+    "id": "l-g3-t3-001",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: plants make their own food using sunlight, water, and air.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Plants use sunlight to mix water from the soil and air to make their own food."
+  },
+  {
+    "id": "l-g3-t3-002",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a butterfly starts life as an egg, becomes a caterpillar, then a chrysalis, and finally a butterfly.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "That four-step change is called the butterfly life cycle, or metamorphosis."
+  },
+  {
+    "id": "l-g3-t3-003",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: cells are the smallest building blocks of all living things.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Every plant, animal, and person is made of tiny units called cells."
+  },
+  {
+    "id": "l-g3-t3-004",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: the heart and the lungs do exactly the same job in the body.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "The heart pumps blood, while the lungs pull oxygen from the air; they have different jobs."
+  },
+  {
+    "id": "l-g3-t3-005",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "If a flower is pollinated and then dries up, what part will most likely grow next?",
+    "choices": [
+      "A new root",
+      "A fruit or seeds",
+      "A second flower in the same spot",
+      "Another leaf"
+    ],
+    "answerIndex": 1,
+    "explanation": "After pollination, the flower can become a fruit or pod that holds seeds."
+  },
+  {
+    "id": "l-g3-t3-006",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which part of the plant uses sunlight to make food?",
+    "choices": [
+      "Roots",
+      "Leaves",
+      "Bark",
+      "Soil"
+    ],
+    "answerIndex": 1,
+    "explanation": "Leaves catch sunlight and use it to make food for the plant."
+  },
+  {
+    "id": "l-g3-t3-007",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Tom plants two bean seeds. He waters one and gives it sunlight, but keeps the other dry and in the dark. What will most likely happen?",
+    "choices": [
+      "Both seeds will grow the same",
+      "Only the watered, sunny seed will grow well",
+      "Only the dark, dry seed will grow well",
+      "Neither seed will ever grow"
+    ],
+    "answerIndex": 1,
+    "explanation": "Seeds need water and (after sprouting) light to grow into healthy plants."
+  },
+  {
+    "id": "l-g3-t3-008",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which body system is mainly in charge of moving blood around the body?",
+    "choices": [
+      "Digestive system",
+      "Skeletal system",
+      "Circulatory system",
+      "Nervous system"
+    ],
+    "answerIndex": 2,
+    "explanation": "The circulatory system, with the heart and blood vessels, moves blood around the body."
+  },
+  {
+    "id": "l-g3-t3-009",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "In a small pond, the sun helps tiny green water plants grow. What is the sun's main job for the pond?",
+    "choices": [
+      "To dry the pond up",
+      "To give the pond its energy so plants can grow",
+      "To make the water salty",
+      "To keep fish quiet at night"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sunlight is the energy source that lets pond plants make food, which feeds other living things."
+  },
+  {
+    "id": "l-g3-t3-010",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which of these is the correct order in a plant's life from start to finish?",
+    "choices": [
+      "Flower, seed, sprout, adult plant",
+      "Seed, sprout, adult plant, flower",
+      "Adult plant, sprout, seed, flower",
+      "Sprout, seed, flower, adult plant"
+    ],
+    "answerIndex": 1,
+    "explanation": "A plant starts as a seed, sprouts, grows into an adult plant, and then makes flowers and new seeds."
   }
 ]
