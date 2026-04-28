@@ -6,7 +6,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: a dog is a mammal.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Dogs have fur, breathe air, and feed milk to their babies, so they are mammals."
   },
@@ -17,7 +20,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: a fish breathes air using lungs.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "Most fish use gills to take oxygen from the water, not lungs."
   },
@@ -28,7 +34,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: birds have feathers.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Feathers are a key feature that all birds share."
   },
@@ -39,7 +48,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: a snake is an insect.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "A snake is a reptile; insects have six legs and three body parts."
   },
@@ -50,7 +62,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which of these animals lives in the ocean?",
-    "choices": ["Lion", "Shark", "Horse", "Eagle"],
+    "choices": [
+      "Lion",
+      "Shark",
+      "Horse",
+      "Eagle"
+    ],
     "answerIndex": 1,
     "explanation": "Sharks live in the ocean and swim using their fins."
   },
@@ -61,7 +78,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "How many legs does a spider have?",
-    "choices": ["6", "8", "4", "10"],
+    "choices": [
+      "6",
+      "8",
+      "4",
+      "10"
+    ],
     "answerIndex": 1,
     "explanation": "Spiders have eight legs, which is one way to tell them apart from insects."
   },
@@ -72,7 +94,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which animal can fly?",
-    "choices": ["Penguin", "Ostrich", "Sparrow", "Cow"],
+    "choices": [
+      "Penguin",
+      "Ostrich",
+      "Sparrow",
+      "Cow"
+    ],
     "answerIndex": 2,
     "explanation": "Sparrows are small birds that fly through the air."
   },
@@ -83,7 +110,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "What do baby cats drink from their mother?",
-    "choices": ["Water", "Milk", "Juice", "Soup"],
+    "choices": [
+      "Water",
+      "Milk",
+      "Juice",
+      "Soup"
+    ],
     "answerIndex": 1,
     "explanation": "Like all mammal babies, kittens drink milk from their mother."
   },
@@ -94,7 +126,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which of these animals is a reptile?",
-    "choices": ["Frog", "Lizard", "Rabbit", "Salmon"],
+    "choices": [
+      "Frog",
+      "Lizard",
+      "Rabbit",
+      "Salmon"
+    ],
     "answerIndex": 1,
     "explanation": "Lizards have scales and lay eggs on land, which makes them reptiles."
   },
@@ -105,7 +142,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "What do cows mostly eat?",
-    "choices": ["Meat", "Grass", "Fish", "Bugs"],
+    "choices": [
+      "Meat",
+      "Grass",
+      "Fish",
+      "Bugs"
+    ],
     "answerIndex": 1,
     "explanation": "Cows are plant-eaters and mostly munch on grass and hay."
   },
@@ -116,7 +158,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: a green frog sitting on a green leaf is using camouflage.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Camouflage means blending in with surroundings, which the green frog does on a green leaf."
   },
@@ -127,7 +172,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: bears sleep through most of the winter to save energy when food is hard to find.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "This long winter sleep is called hibernation, and it helps bears survive when food is scarce."
   },
@@ -138,7 +186,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: in a food chain, the rabbit eats the fox.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "It is the other way around: the fox is the predator and the rabbit is its prey."
   },
@@ -149,7 +200,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: ducks have webbed feet to help them swim.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Webbed feet act like paddles, pushing water back so the duck moves forward."
   },
@@ -160,7 +214,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Why do many birds fly south for the winter?",
-    "choices": ["To find warmer weather and more food", "To grow bigger wings", "To lay eggs in cold places", "To learn new songs"],
+    "choices": [
+      "To find warmer weather and more food",
+      "To grow bigger wings",
+      "To lay eggs in cold places",
+      "To learn new songs"
+    ],
     "answerIndex": 0,
     "explanation": "This trip is called migration, and birds make it to find food and warmer weather."
   },
@@ -171,7 +230,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "A caterpillar will turn into which animal next in its life cycle?",
-    "choices": ["A bee", "A butterfly", "A bird", "A frog"],
+    "choices": [
+      "A bee",
+      "A butterfly",
+      "A bird",
+      "A frog"
+    ],
     "answerIndex": 1,
     "explanation": "Caterpillars form a chrysalis and then come out as butterflies."
   },
@@ -182,7 +246,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Which animal is best suited to live in a hot, dry desert?",
-    "choices": ["Polar bear", "Camel", "Penguin", "Frog"],
+    "choices": [
+      "Polar bear",
+      "Camel",
+      "Penguin",
+      "Frog"
+    ],
     "answerIndex": 1,
     "explanation": "Camels can go a long time without water and have wide feet that walk on sand."
   },
@@ -193,7 +262,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Why does a giraffe have such a long neck?",
-    "choices": ["To run faster", "To reach leaves high up in trees", "To swim better", "To stay warm"],
+    "choices": [
+      "To run faster",
+      "To reach leaves high up in trees",
+      "To swim better",
+      "To stay warm"
+    ],
     "answerIndex": 1,
     "explanation": "A long neck lets giraffes eat leaves from tall trees that other animals cannot reach."
   },
@@ -204,7 +278,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Grass is eaten by a grasshopper, and a bird eats the grasshopper. In this food chain, which one is the predator of the grasshopper?",
-    "choices": ["The grass", "The bird", "The grasshopper itself", "The sun"],
+    "choices": [
+      "The grass",
+      "The bird",
+      "The grasshopper itself",
+      "The sun"
+    ],
     "answerIndex": 1,
     "explanation": "The bird hunts and eats the grasshopper, so it is the grasshopper's predator."
   },
@@ -215,7 +294,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Which body part helps a fish move and steer through the water?",
-    "choices": ["Its scales", "Its fins", "Its eyes", "Its teeth"],
+    "choices": [
+      "Its scales",
+      "Its fins",
+      "Its eyes",
+      "Its teeth"
+    ],
     "answerIndex": 1,
     "explanation": "Fish push and turn through water using their fins."
   },
@@ -226,7 +310,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: a whale is a fish because it lives in the ocean.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "Whales live in water but are mammals: they breathe air, are warm-blooded, and feed milk to their babies."
   },
@@ -237,7 +324,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: if all the grass died, both the rabbits and the foxes that eat the rabbits would be in trouble.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Without grass, rabbits would not have food, and without rabbits, foxes would lose their prey."
   },
@@ -248,7 +338,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: a tadpole and an adult frog look almost exactly the same.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "Tadpoles live in water and have tails and gills, while adult frogs have legs and can breathe air."
   },
@@ -259,7 +352,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: a chicken is a bird, even though it usually does not fly far.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Chickens have feathers, beaks, and lay eggs, so they are birds even though they fly only short distances."
   },
@@ -270,7 +366,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Which of these animals would survive longest in a snowy polar habitat?",
-    "choices": ["Lizard", "Polar bear", "Frog", "Parrot"],
+    "choices": [
+      "Lizard",
+      "Polar bear",
+      "Frog",
+      "Parrot"
+    ],
     "answerIndex": 1,
     "explanation": "Polar bears have thick fur and a layer of fat that keep them warm in icy places."
   },
@@ -281,7 +382,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "An animal lays eggs, has dry scales, and lies in the sun to warm up. Which group does it belong to?",
-    "choices": ["Mammals", "Reptiles", "Birds", "Fish"],
+    "choices": [
+      "Mammals",
+      "Reptiles",
+      "Birds",
+      "Fish"
+    ],
     "answerIndex": 1,
     "explanation": "Reptiles have dry scales, lay eggs, and use the sun to warm their bodies."
   },
@@ -292,7 +398,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "In a forest food chain, the order goes plant, then deer, then wolf. What would most likely happen if all the wolves disappeared?",
-    "choices": ["The grass would die first", "There would be more deer than before", "The trees would grow shorter", "The deer would also disappear"],
+    "choices": [
+      "The grass would die first",
+      "There would be more deer than before",
+      "The trees would grow shorter",
+      "The deer would also disappear"
+    ],
     "answerIndex": 1,
     "explanation": "Without wolves to hunt them, deer numbers would grow because they have fewer predators."
   },
@@ -303,7 +414,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Which animal is an amphibian?",
-    "choices": ["Turtle", "Salamander", "Goldfish", "Sparrow"],
+    "choices": [
+      "Turtle",
+      "Salamander",
+      "Goldfish",
+      "Sparrow"
+    ],
     "answerIndex": 1,
     "explanation": "Salamanders start life in water with gills and grow into adults that can live on land."
   },
@@ -314,7 +430,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Which feature would best help an animal hide from predators in a green forest?",
-    "choices": ["Bright orange fur", "Green and brown spots", "A loud roar", "Shiny silver scales"],
+    "choices": [
+      "Bright orange fur",
+      "Green and brown spots",
+      "A loud roar",
+      "Shiny silver scales"
+    ],
     "answerIndex": 1,
     "explanation": "Green and brown patterns blend in with leaves and trees, so predators have a harder time seeing the animal."
   },
@@ -325,7 +446,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Which list shows the life cycle of a butterfly in the right order?",
-    "choices": ["Egg, butterfly, caterpillar, chrysalis", "Caterpillar, egg, chrysalis, butterfly", "Egg, caterpillar, chrysalis, butterfly", "Chrysalis, egg, caterpillar, butterfly"],
+    "choices": [
+      "Egg, butterfly, caterpillar, chrysalis",
+      "Caterpillar, egg, chrysalis, butterfly",
+      "Egg, caterpillar, chrysalis, butterfly",
+      "Chrysalis, egg, caterpillar, butterfly"
+    ],
     "answerIndex": 2,
     "explanation": "A butterfly starts as an egg, hatches into a caterpillar, forms a chrysalis, and finally becomes a butterfly."
   },
@@ -336,7 +462,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: a bat is a mammal.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Bats have fur, are warm-blooded, and feed milk to their young, so they are mammals even though they fly."
   },
@@ -347,7 +476,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: a dolphin is a fish.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "Dolphins are mammals; they breathe air through a blowhole and feed milk to their babies."
   },
@@ -358,7 +490,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: insects are invertebrates because they do not have a backbone.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Animals without a backbone are called invertebrates, and insects do not have a backbone."
   },
@@ -369,7 +504,10 @@
     "difficulty": 1,
     "type": "tf",
     "prompt": "True or false: amphibians like frogs usually start life in water.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Most amphibians lay eggs in water, and the young breathe with gills before growing into adults."
   },
@@ -380,7 +518,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "An octopus has how many arms?",
-    "choices": ["Six", "Eight", "Ten", "Four"],
+    "choices": [
+      "Six",
+      "Eight",
+      "Ten",
+      "Four"
+    ],
     "answerIndex": 1,
     "explanation": "The prefix 'octo-' means eight, and an octopus has eight arms."
   },
@@ -391,7 +534,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which of these animals is cold-blooded?",
-    "choices": ["Dog", "Eagle", "Lizard", "Cow"],
+    "choices": [
+      "Dog",
+      "Eagle",
+      "Lizard",
+      "Cow"
+    ],
     "answerIndex": 2,
     "explanation": "Reptiles like lizards are cold-blooded, which means their body temperature changes with the air around them."
   },
@@ -402,7 +550,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which animal lives in the African savanna?",
-    "choices": ["Polar bear", "Zebra", "Penguin", "Moose"],
+    "choices": [
+      "Polar bear",
+      "Zebra",
+      "Penguin",
+      "Moose"
+    ],
     "answerIndex": 1,
     "explanation": "Zebras roam the grassy plains of the African savanna in herds."
   },
@@ -413,7 +566,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which group does a sea turtle belong to?",
-    "choices": ["Mammals", "Birds", "Reptiles", "Fish"],
+    "choices": [
+      "Mammals",
+      "Birds",
+      "Reptiles",
+      "Fish"
+    ],
     "answerIndex": 2,
     "explanation": "Sea turtles have scales and lay eggs on land, which makes them reptiles."
   },
@@ -424,7 +582,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which of these is an example of a vertebrate?",
-    "choices": ["Worm", "Spider", "Cat", "Jellyfish"],
+    "choices": [
+      "Worm",
+      "Spider",
+      "Cat",
+      "Jellyfish"
+    ],
     "answerIndex": 2,
     "explanation": "Vertebrates have a backbone, and a cat has a backbone running down its spine."
   },
@@ -435,7 +598,12 @@
     "difficulty": 1,
     "type": "mc",
     "prompt": "Which animal is famous for moving very slowly through the trees of the rainforest?",
-    "choices": ["Cheetah", "Sloth", "Kangaroo", "Wolf"],
+    "choices": [
+      "Cheetah",
+      "Sloth",
+      "Kangaroo",
+      "Wolf"
+    ],
     "answerIndex": 1,
     "explanation": "Sloths hang from rainforest trees and move very slowly to save energy."
   },
@@ -446,7 +614,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: polar bears have white fur to help them blend in with snow and ice when hunting.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "White fur is a camouflage adaptation that helps polar bears sneak up on seals across the ice."
   },
@@ -457,7 +628,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: chameleons can change color to communicate or to blend in with their surroundings.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Chameleons change color for camouflage, to react to temperature, and to send signals to other chameleons."
   },
@@ -468,7 +642,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: in a typical food chain, plants come before plant-eating animals.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Plants make their own food using sunlight, and herbivores eat them, so plants come first."
   },
@@ -479,7 +656,10 @@
     "difficulty": 2,
     "type": "tf",
     "prompt": "True or false: a snake is warm-blooded like a human.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "Snakes are reptiles, which are cold-blooded, so their body temperature depends on their surroundings."
   },
@@ -490,7 +670,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Why do many fish swim together in large groups called schools?",
-    "choices": ["To stay warm in cold water", "To make it harder for predators to catch them", "To take turns sleeping", "To grow bigger fins"],
+    "choices": [
+      "To stay warm in cold water",
+      "To make it harder for predators to catch them",
+      "To take turns sleeping",
+      "To grow bigger fins"
+    ],
     "answerIndex": 1,
     "explanation": "A big swirling school confuses predators and lowers each fish's chance of being eaten."
   },
@@ -501,7 +686,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Which of these is the best example of an adaptation for hibernation?",
-    "choices": ["A bird's hollow bones", "A bear storing extra body fat in autumn", "A fish's scales", "A snake's forked tongue"],
+    "choices": [
+      "A bird's hollow bones",
+      "A bear storing extra body fat in autumn",
+      "A fish's scales",
+      "A snake's forked tongue"
+    ],
     "answerIndex": 1,
     "explanation": "Bears build up body fat so they have stored energy to survive a long winter sleep."
   },
@@ -512,7 +702,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Which animal is a herbivore?",
-    "choices": ["Lion", "Shark", "Cow", "Hawk"],
+    "choices": [
+      "Lion",
+      "Shark",
+      "Cow",
+      "Hawk"
+    ],
     "answerIndex": 2,
     "explanation": "Herbivores eat only plants, and cows munch on grass and hay all day."
   },
@@ -523,7 +718,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Why is the rabbit called the prey in the food chain 'grass, rabbit, fox'?",
-    "choices": ["Because it eats grass", "Because the fox hunts and eats it", "Because it has soft fur", "Because it is warm-blooded"],
+    "choices": [
+      "Because it eats grass",
+      "Because the fox hunts and eats it",
+      "Because it has soft fur",
+      "Because it is warm-blooded"
+    ],
     "answerIndex": 1,
     "explanation": "Prey are animals that get hunted; the fox is the predator that hunts the rabbit."
   },
@@ -534,7 +734,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Which adaptation best helps a desert lizard survive in very hot weather?",
-    "choices": ["Thick layers of fur", "Hiding under rocks during the hottest part of the day", "Living deep underwater", "Having no scales at all"],
+    "choices": [
+      "Thick layers of fur",
+      "Hiding under rocks during the hottest part of the day",
+      "Living deep underwater",
+      "Having no scales at all"
+    ],
     "answerIndex": 1,
     "explanation": "Many desert animals stay cool by hiding in shade or burrows when the sun is strongest."
   },
@@ -545,7 +750,12 @@
     "difficulty": 2,
     "type": "mc",
     "prompt": "Which of these is NOT a stage in the life cycle of a frog?",
-    "choices": ["Egg", "Tadpole", "Chrysalis", "Adult frog"],
+    "choices": [
+      "Egg",
+      "Tadpole",
+      "Chrysalis",
+      "Adult frog"
+    ],
     "answerIndex": 2,
     "explanation": "A chrysalis belongs to the butterfly life cycle; frogs go from egg to tadpole to froglet to adult."
   },
@@ -556,7 +766,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: a platypus is a mammal even though it lays eggs.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Platypuses are unusual mammals that lay eggs but still feed milk to their young."
   },
@@ -567,7 +780,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: a spider is an insect because it has more than four legs.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "Spiders are arachnids: they have eight legs and two body parts, while insects have six legs and three body parts."
   },
@@ -578,7 +794,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: monarch butterflies migrate thousands of kilometres to escape cold winters.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 0,
     "explanation": "Monarchs travel from places like Canada all the way to Mexico to spend the winter where it is warm."
   },
@@ -589,7 +808,10 @@
     "difficulty": 3,
     "type": "tf",
     "prompt": "True or false: jellyfish are vertebrates because they live in the ocean.",
-    "choices": ["True", "False"],
+    "choices": [
+      "True",
+      "False"
+    ],
     "answerIndex": 1,
     "explanation": "Jellyfish have no backbone, so they are invertebrates; living in the ocean does not make an animal a vertebrate."
   },
@@ -600,7 +822,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Which of these animals would survive longest in a hot, dry desert?",
-    "choices": ["Polar bear", "Camel", "Penguin", "Salmon"],
+    "choices": [
+      "Polar bear",
+      "Camel",
+      "Penguin",
+      "Salmon"
+    ],
     "answerIndex": 1,
     "explanation": "Camels can store fat in their humps and go many days without water, which fits desert life."
   },
@@ -611,7 +838,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "An animal is warm-blooded, has feathers, lays eggs, and has a beak. Which group does it belong to?",
-    "choices": ["Mammals", "Reptiles", "Birds", "Amphibians"],
+    "choices": [
+      "Mammals",
+      "Reptiles",
+      "Birds",
+      "Amphibians"
+    ],
     "answerIndex": 2,
     "explanation": "Feathers, beaks, and laying eggs are signs of birds, which are also warm-blooded."
   },
@@ -622,7 +854,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "In a food chain of grass, grasshopper, frog, and snake, what would most likely happen first if all the grasshoppers disappeared?",
-    "choices": ["The snakes would eat the grass", "The frogs would have less food", "The grass would die out", "The snakes would grow wings"],
+    "choices": [
+      "The snakes would eat the grass",
+      "The frogs would have less food",
+      "The grass would die out",
+      "The snakes would grow wings"
+    ],
     "answerIndex": 1,
     "explanation": "Frogs depend on grasshoppers for food, so losing them would leave frogs with less to eat."
   },
@@ -633,7 +870,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Which animal is an invertebrate?",
-    "choices": ["Eagle", "Octopus", "Frog", "Salmon"],
+    "choices": [
+      "Eagle",
+      "Octopus",
+      "Frog",
+      "Salmon"
+    ],
     "answerIndex": 1,
     "explanation": "An octopus has no backbone, so it is an invertebrate; the others all have backbones."
   },
@@ -644,7 +886,12 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Why does an arctic fox grow a thick white coat in winter and a thinner brown coat in summer?",
-    "choices": ["To match the seasons for warmth and camouflage", "To trick other foxes into liking it", "Because its food changes color", "To make it run faster"],
+    "choices": [
+      "To match the seasons for warmth and camouflage",
+      "To trick other foxes into liking it",
+      "Because its food changes color",
+      "To make it run faster"
+    ],
     "answerIndex": 0,
     "explanation": "The thick white coat keeps it warm and hidden in snow, while the brown summer coat blends in with rocks and dirt."
   },
@@ -655,8 +902,163 @@
     "difficulty": 3,
     "type": "mc",
     "prompt": "Which list shows the correct order of a typical ocean food chain?",
-    "choices": ["Shark, small fish, tiny plankton", "Tiny plankton, small fish, shark", "Small fish, shark, tiny plankton", "Shark, tiny plankton, small fish"],
+    "choices": [
+      "Shark, small fish, tiny plankton",
+      "Tiny plankton, small fish, shark",
+      "Small fish, shark, tiny plankton",
+      "Shark, tiny plankton, small fish"
+    ],
     "answerIndex": 1,
     "explanation": "A food chain starts with the smallest producer or prey: plankton are eaten by small fish, which are eaten by sharks."
+  },
+  {
+    "id": "l-g3-t1-001",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: plants need sunlight to grow.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Plants use sunlight to make their food, so most plants need light to grow well."
+  },
+  {
+    "id": "l-g3-t1-002",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: your bones help your body stand up.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Bones make a strong frame, called the skeleton, that holds the body up."
+  },
+  {
+    "id": "l-g3-t1-003",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: people use their lungs to breathe.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lungs take in air so the body can use the oxygen inside it."
+  },
+  {
+    "id": "l-g3-t1-004",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a seed can grow into a new plant.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Seeds hold tiny baby plants inside that can sprout when planted."
+  },
+  {
+    "id": "l-g3-t1-005",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: roots grow up toward the sky.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Roots grow down into the soil to soak up water and hold the plant in place."
+  },
+  {
+    "id": "l-g3-t1-006",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which part of a plant takes in water from the soil?",
+    "choices": [
+      "Leaves",
+      "Flower",
+      "Roots",
+      "Stem"
+    ],
+    "answerIndex": 2,
+    "explanation": "Roots reach into the soil and pull water up into the plant."
+  },
+  {
+    "id": "l-g3-t1-007",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which body part pumps blood around your body?",
+    "choices": [
+      "Brain",
+      "Heart",
+      "Stomach",
+      "Liver"
+    ],
+    "answerIndex": 1,
+    "explanation": "The heart squeezes like a pump and pushes blood through the body."
+  },
+  {
+    "id": "l-g3-t1-008",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which sense do you use mostly with your eyes?",
+    "choices": [
+      "Hearing",
+      "Smelling",
+      "Sight",
+      "Taste"
+    ],
+    "answerIndex": 2,
+    "explanation": "Eyes let us see light and colors, which is the sense of sight."
+  },
+  {
+    "id": "l-g3-t1-009",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these do plants need to grow well?",
+    "choices": [
+      "Soda pop",
+      "Water",
+      "Plastic",
+      "Salt"
+    ],
+    "answerIndex": 1,
+    "explanation": "Plants need water, along with sunlight and air, to live and grow."
+  },
+  {
+    "id": "l-g3-t1-010",
+    "grade": 3,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which part of a plant is usually colorful and helps make seeds?",
+    "choices": [
+      "Root",
+      "Leaf",
+      "Flower",
+      "Bark"
+    ],
+    "answerIndex": 2,
+    "explanation": "Flowers are the part of the plant where seeds and fruit start to form."
   }
 ]
