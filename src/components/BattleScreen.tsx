@@ -17,9 +17,10 @@ interface Props {
   allPowers: Power[];
   onWin: (result: { stars: 1 | 2 | 3; points: number }) => void;
   onLose: () => void;
+  onRun?: () => void;
 }
 
-export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWin, onLose }: Props) {
+export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWin, onLose, onRun }: Props) {
   const [first, ...rest] = questions;
   const [state, dispatch] = useReducer(battleReducer, {
     levelId: level.id,
@@ -87,10 +88,19 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
   return (
     <div className="flex flex-col items-stretch gap-3 p-3 max-w-xl mx-auto">
       {/* Battle banner */}
-      <div className="bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-3 py-2 text-center font-mono">
+      <div className="relative bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-3 py-2 text-center font-mono">
         <span className="text-sm sm:text-base font-bold tracking-wider text-slate-900 uppercase">
           Wild {level.creatureName} appeared!
         </span>
+        {onRun && (
+          <button
+            onClick={onRun}
+            aria-label="Run from battle"
+            className="absolute top-1/2 right-2 -translate-y-1/2 bg-amber-100 hover:bg-yellow-200 text-slate-900 font-mono font-bold text-xs uppercase tracking-wider py-1 px-2 border-2 border-slate-900 rounded-sm shadow-[2px_2px_0_#0f172a] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[1px_1px_0_#0f172a]"
+          >
+            🏃 Run
+          </button>
+        )}
       </div>
 
       {/* Battlefield */}
