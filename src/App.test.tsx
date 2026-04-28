@@ -1,7 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("App renders the title", () => {
+beforeEach(() => localStorage.clear());
+
+test("first run shows TitleScreen", () => {
   render(<App />);
-  expect(screen.getByText(/Kids Science Battle/i)).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: /Kids Science Battle/i })).toBeInTheDocument();
+  expect(screen.getByLabelText(/Your Name/i)).toBeInTheDocument();
 });
