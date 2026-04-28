@@ -93,7 +93,17 @@ export default function App() {
 
   function handleChangeGrade(g: Grade) {
     if (!profile) return;
-    setProfile({ ...profile, gradeLevel: g });
+    if (g === profile.gradeLevel) return;
+    const ok = confirm(
+      `Switch to Grade ${g}? Your level progress and unlocked powers will reset, but your total points will stay.`,
+    );
+    if (!ok) return;
+    setProfile({
+      ...profile,
+      gradeLevel: g,
+      levelResults: {},
+      unlockedPowers: [],
+    });
   }
 
   if (!profile || screen.name === "title") {
