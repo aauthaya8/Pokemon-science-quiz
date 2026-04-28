@@ -2726,5 +2726,157 @@
     ],
     "answerIndex": 1,
     "explanation": "Earthquakes happen when large slabs of Earth's crust, called plates, suddenly move against each other."
+  },
+  {
+    "id": "p-g3-t1-001",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: ice is water in its solid form.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ice is just water that has frozen into a solid shape."
+  },
+  {
+    "id": "p-g3-t1-002",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a magnet sticks to a piece of paper.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Magnets stick to things made of iron, not to paper."
+  },
+  {
+    "id": "p-g3-t1-003",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: the Sun gives us light.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "The Sun is a giant light source that lights up our day."
+  },
+  {
+    "id": "p-g3-t1-004",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a ramp helps you move heavy things up to a higher place more easily.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "A ramp is a simple machine that makes lifting easier by spreading the work over a longer slope."
+  },
+  {
+    "id": "p-g3-t1-005",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is a liquid?",
+    "choices": [
+      "Rock",
+      "Water",
+      "Wood",
+      "Ice cube"
+    ],
+    "answerIndex": 1,
+    "explanation": "Water is a liquid because it flows and takes the shape of its container."
+  },
+  {
+    "id": "p-g3-t1-006",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What pulls a ball back down when you throw it up in the air?",
+    "choices": [
+      "Wind",
+      "Gravity",
+      "Sound",
+      "Sunlight"
+    ],
+    "answerIndex": 1,
+    "explanation": "Gravity is the force that pulls things down toward the ground."
+  },
+  {
+    "id": "p-g3-t1-007",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these gives off light?",
+    "choices": [
+      "A flashlight that is turned on",
+      "A pillow",
+      "A pencil",
+      "A spoon"
+    ],
+    "answerIndex": 0,
+    "explanation": "A flashlight is a light source when it is switched on."
+  },
+  {
+    "id": "p-g3-t1-008",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which object would a magnet stick to?",
+    "choices": [
+      "A plastic spoon",
+      "A paper plate",
+      "An iron nail",
+      "A glass cup"
+    ],
+    "answerIndex": 2,
+    "explanation": "Magnets stick to iron, so an iron nail will be pulled to a magnet."
+  },
+  {
+    "id": "p-g3-t1-009",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "When you bang a drum, what makes the sound?",
+    "choices": [
+      "The drum vibrates",
+      "The drum gets cold",
+      "The drum changes color",
+      "The drum gets heavier"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sounds are made when something shakes back and forth, called vibrating."
+  },
+  {
+    "id": "p-g3-t1-010",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is a way to move a toy car?",
+    "choices": [
+      "Look at it",
+      "Push it",
+      "Smell it",
+      "Listen to it"
+    ],
+    "answerIndex": 1,
+    "explanation": "A push is a force that can make a toy car move forward."
   }
 ]
