@@ -3030,5 +3030,157 @@
     ],
     "answerIndex": 2,
     "explanation": "A rainbow has colors like red, orange, yellow, green, blue, and violet, but not black."
+  },
+  {
+    "id": "p-g3-t3-001",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: when you push a heavy box and it doesn't move at all, friction is pushing back against you.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Friction between the box and the floor pushes back and balances your push, so the box stays still."
+  },
+  {
+    "id": "p-g3-t3-002",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a smooth shiny mirror bounces light back to your eyes so you can see your face.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Mirrors reflect light, sending it back to your eyes so you see your reflection."
+  },
+  {
+    "id": "p-g3-t3-003",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: when water in a pot turns into steam, it changes from a liquid into a gas.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Heating water makes it boil and change into steam, which is water in its gas state."
+  },
+  {
+    "id": "p-g3-t3-004",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a thicker rubber band makes a higher sound than a thin one when you pluck it.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Thicker rubber bands vibrate more slowly, which makes a lower sound, not a higher one."
+  },
+  {
+    "id": "p-g3-t3-005",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "You roll the same toy car down two ramps. One ramp is short and steep, the other is long and gentle. The car going down the steep ramp moves faster at the bottom. Why?",
+    "choices": [
+      "Gravity pulls it down faster on the steep ramp",
+      "The long ramp is magnetic",
+      "Toy cars only like steep ramps",
+      "Air pushes harder on long ramps"
+    ],
+    "answerIndex": 0,
+    "explanation": "On a steeper ramp, gravity speeds the car up more in a shorter distance."
+  },
+  {
+    "id": "p-g3-t3-006",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which simple machine works like a seesaw, with a bar that turns around a fixed point?",
+    "choices": [
+      "A pulley",
+      "A lever",
+      "A ramp",
+      "A wedge"
+    ],
+    "answerIndex": 1,
+    "explanation": "A lever is a bar that pivots on a fixed point, just like a seesaw."
+  },
+  {
+    "id": "p-g3-t3-007",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "When the Sun is low in the sky in the evening, your shadow looks very long. Why?",
+    "choices": [
+      "Your body grows in the evening",
+      "Light from the Sun hits you at a low angle and stretches the shadow",
+      "Shadows like to be long at night",
+      "Your shoes get heavier"
+    ],
+    "answerIndex": 1,
+    "explanation": "Low sunlight comes in at a slant, which stretches your shadow out along the ground."
+  },
+  {
+    "id": "p-g3-t3-008",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "You build a circuit with a battery and a bulb, but the bulb doesn't light up. Which is the most likely reason?",
+    "choices": [
+      "The wires are not connected all the way around",
+      "The bulb is too happy",
+      "Magnets are blocking the battery",
+      "The battery is too small to have any electricity"
+    ],
+    "answerIndex": 0,
+    "explanation": "A bulb only lights when the wires make a complete loop from the battery to the bulb and back."
+  },
+  {
+    "id": "p-g3-t3-009",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which of these objects would NOT be pulled by a strong magnet?",
+    "choices": [
+      "A steel paperclip",
+      "An iron nail",
+      "A copper penny",
+      "A metal fridge door"
+    ],
+    "answerIndex": 2,
+    "explanation": "Magnets pull on iron and steel, but copper is a metal that magnets do not attract."
+  },
+  {
+    "id": "p-g3-t3-010",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "You bang a metal pole on one end and a friend with their ear on the other end hears the sound very fast. What carries the sound?",
+    "choices": [
+      "The metal of the pole shakes and passes the sound along",
+      "Light from the pole",
+      "Tiny invisible birds",
+      "The pole turns into water"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sound travels through solids by making the material vibrate from one end to the other."
   }
 ]
