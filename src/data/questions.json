@@ -1966,5 +1966,157 @@
     ],
     "answerIndex": 2,
     "explanation": "Most of Earth is covered by water in the oceans."
+  },
+  {
+    "id": "e-g3-t2-001",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "The Moon makes its own light, just like the Sun does.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Moon does not make light. It only reflects sunlight."
+  },
+  {
+    "id": "e-g3-t2-002",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "Daytime happens on the side of Earth that is facing the Sun.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "The side of Earth pointed at the Sun has daytime; the other side has night."
+  },
+  {
+    "id": "e-g3-t2-003",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "Soil is made only of tiny rocks and nothing else.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Soil is made of broken rock plus bits of dead plants and tiny living things."
+  },
+  {
+    "id": "e-g3-t2-004",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "Wind is moving air.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Wind is just air that is moving from one place to another."
+  },
+  {
+    "id": "e-g3-t2-005",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why do we see different shapes of the Moon during the month?",
+    "choices": [
+      "The Moon changes its real shape",
+      "Different parts of the lit Moon face Earth as it moves",
+      "Clouds cover parts of the Moon",
+      "The Sun gets dimmer"
+    ],
+    "answerIndex": 1,
+    "explanation": "As the Moon moves around Earth, we see different lit parts, which makes the phases."
+  },
+  {
+    "id": "e-g3-t2-006",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Where does most rain come from?",
+    "choices": [
+      "Lakes underground",
+      "Clouds in the sky",
+      "Trees",
+      "The Sun"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rain falls from clouds when the water drops get too heavy to stay up."
+  },
+  {
+    "id": "e-g3-t2-007",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why is it usually colder in winter than in summer where you live?",
+    "choices": [
+      "The Sun is farther from Earth",
+      "The Sun's light hits your part of Earth less directly",
+      "Clouds block the Sun all winter",
+      "The Moon blocks the Sun"
+    ],
+    "answerIndex": 1,
+    "explanation": "In winter, sunlight hits your area at a slanted angle, so it warms the ground less."
+  },
+  {
+    "id": "e-g3-t2-008",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these would you most likely find inside a fossil?",
+    "choices": [
+      "A fresh leaf",
+      "A shape or print of a long-ago plant or animal",
+      "A bottle cap",
+      "A drop of fresh water"
+    ],
+    "answerIndex": 1,
+    "explanation": "A fossil shows the shape of a plant or animal that lived a long time ago."
+  },
+  {
+    "id": "e-g3-t2-009",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "What makes a puddle of water slowly disappear on a sunny day?",
+    "choices": [
+      "The water turns into invisible vapor and goes into the air",
+      "The water sinks all the way through the ground",
+      "Birds drink all of it",
+      "It freezes"
+    ],
+    "answerIndex": 0,
+    "explanation": "The Sun's heat turns the water into vapor, and it rises into the air."
+  },
+  {
+    "id": "e-g3-t2-010",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these is the biggest?",
+    "choices": [
+      "The Moon",
+      "Earth",
+      "The Sun",
+      "A cloud"
+    ],
+    "answerIndex": 2,
+    "explanation": "The Sun is much bigger than Earth or the Moon."
   }
 ]
