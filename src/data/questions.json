@@ -2878,5 +2878,157 @@
     ],
     "answerIndex": 1,
     "explanation": "A push is a force that can make a toy car move forward."
+  },
+  {
+    "id": "p-g3-t2-001",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: ice cubes melt faster in a warm room than in a cold freezer.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Heat makes ice melt, so a warm room melts ice cubes faster than a cold freezer."
+  },
+  {
+    "id": "p-g3-t2-002",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: rubbing your hands together quickly makes them feel warmer.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rubbing creates friction, and friction makes heat that warms your hands."
+  },
+  {
+    "id": "p-g3-t2-003",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: shadows are made when something blocks light.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "A shadow appears when an object stops light from reaching a surface."
+  },
+  {
+    "id": "p-g3-t2-004",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: a rubber band is a good material to use for a wire that carries electricity.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rubber blocks electricity, which is why wires use metal inside and rubber on the outside."
+  },
+  {
+    "id": "p-g3-t2-005",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why does a puddle on the sidewalk slowly disappear on a sunny day?",
+    "choices": [
+      "The water sinks into the air as a gas",
+      "The water turns into rocks",
+      "The water freezes",
+      "The water turns into sand"
+    ],
+    "answerIndex": 0,
+    "explanation": "The Sun's heat turns the puddle water into water vapor, a gas that goes into the air."
+  },
+  {
+    "id": "p-g3-t2-006",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "You drop a ball and a feather at the same time inside a room. Which usually hits the floor first?",
+    "choices": [
+      "The feather",
+      "The ball",
+      "Both at the exact same time",
+      "Neither one falls"
+    ],
+    "answerIndex": 1,
+    "explanation": "Air slows the feather down more than the ball, so the ball usually lands first."
+  },
+  {
+    "id": "p-g3-t2-007",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which one of these would make the loudest sound when you tap it hard?",
+    "choices": [
+      "A pillow",
+      "A metal pot",
+      "A roll of socks",
+      "A blanket"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hard things like metal pots vibrate strongly and make louder sounds than soft things."
+  },
+  {
+    "id": "p-g3-t2-008",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why is it harder to push a heavy box across a rough carpet than across a smooth wooden floor?",
+    "choices": [
+      "The carpet is colder",
+      "There is more rubbing between the box and the carpet",
+      "Boxes are scared of carpets",
+      "The wood is magnetic"
+    ],
+    "answerIndex": 1,
+    "explanation": "A rough carpet rubs against the box more, which makes it harder to slide."
+  },
+  {
+    "id": "p-g3-t2-009",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "You hold two magnets close together and they jump apart. What is happening?",
+    "choices": [
+      "They are sticking together tightly",
+      "They are pushing each other away",
+      "They are both broken",
+      "They have lost their magnet power"
+    ],
+    "answerIndex": 1,
+    "explanation": "Magnets can push each other away when their matching ends are pointed at each other."
+  },
+  {
+    "id": "p-g3-t2-010",
+    "grade": 3,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which color is NOT one of the colors of the rainbow?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Black",
+      "Green"
+    ],
+    "answerIndex": 2,
+    "explanation": "A rainbow has colors like red, orange, yellow, green, blue, and violet, but not black."
   }
 ]
