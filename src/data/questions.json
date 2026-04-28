@@ -2574,5 +2574,157 @@
     ],
     "answerIndex": 1,
     "explanation": "Earth's air is mostly nitrogen with some oxygen, plus small amounts of other gases."
+  },
+  {
+    "id": "e-g4-t3-001",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "The ozone layer in Earth's atmosphere helps block harmful ultraviolet rays from the Sun.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "The ozone layer is a part of the atmosphere that absorbs most of the Sun's harmful ultraviolet rays."
+  },
+  {
+    "id": "e-g4-t3-002",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "Igneous rock forms when melted rock, called magma or lava, cools and hardens.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Igneous rocks form when hot, melted rock cools down and becomes solid."
+  },
+  {
+    "id": "e-g4-t3-003",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "A solar eclipse happens when the Moon passes between the Sun and Earth and blocks the Sun's light for a short time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "During a solar eclipse, the Moon lines up between the Sun and Earth and casts a shadow on Earth."
+  },
+  {
+    "id": "e-g4-t3-004",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "Erosion is the process where wind, water, or ice slowly carry away small pieces of rock and soil.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Erosion moves broken bits of rock and soil from one place to another, often by water, wind, or ice."
+  },
+  {
+    "id": "e-g4-t3-005",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which gas in Earth's atmosphere protects living things by absorbing most of the Sun's harmful ultraviolet rays?",
+    "choices": [
+      "Nitrogen",
+      "Oxygen",
+      "Ozone",
+      "Carbon dioxide"
+    ],
+    "answerIndex": 2,
+    "explanation": "Ozone is a gas high in the atmosphere that absorbs most of the Sun's harmful UV rays."
+  },
+  {
+    "id": "e-g4-t3-006",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "A scientist sees flat layers of rock with shells and small fossils inside. What kind of rock is this most likely to be?",
+    "choices": [
+      "Sedimentary rock",
+      "Igneous rock",
+      "Metamorphic rock",
+      "A meteorite"
+    ],
+    "answerIndex": 0,
+    "explanation": "Layers with fossils usually form when sand, mud, and shells get pressed together over time, making sedimentary rock."
+  },
+  {
+    "id": "e-g4-t3-007",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "It is summer in Canada and winter in Australia at the same time. What is the main reason?",
+    "choices": [
+      "Australia is much farther from the Sun than Canada",
+      "Earth's tilt means the two halves of Earth get different amounts of direct sunlight",
+      "Australia has more clouds",
+      "The Moon blocks half of Earth"
+    ],
+    "answerIndex": 1,
+    "explanation": "Because Earth is tilted, when one hemisphere leans toward the Sun (summer), the other leans away (winter)."
+  },
+  {
+    "id": "e-g4-t3-008",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "List the steps of the water cycle in the right order, starting with water on the ground.",
+    "choices": [
+      "Precipitation, evaporation, condensation",
+      "Evaporation, condensation, precipitation",
+      "Condensation, precipitation, evaporation",
+      "Precipitation, condensation, evaporation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Water on the ground evaporates, the vapor cools and condenses into clouds, then falls as precipitation."
+  },
+  {
+    "id": "e-g4-t3-009",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which planet has rings made mostly of ice and rock that are easy to see with a telescope?",
+    "choices": [
+      "Mars",
+      "Mercury",
+      "Saturn",
+      "Venus"
+    ],
+    "answerIndex": 2,
+    "explanation": "Saturn is famous for its bright, wide rings made of pieces of ice and rock."
+  },
+  {
+    "id": "e-g4-t3-010",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "An earthquake shakes the ground in one city. What inside Earth most likely caused it?",
+    "choices": [
+      "Wind blowing very hard above the city",
+      "Two huge pieces of Earth's crust suddenly slipping past each other",
+      "Heavy rain soaking the soil",
+      "The Moon pulling on the ocean"
+    ],
+    "answerIndex": 1,
+    "explanation": "Earthquakes happen when large slabs of Earth's crust, called plates, suddenly move against each other."
   }
 ]
