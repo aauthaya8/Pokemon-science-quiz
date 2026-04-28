@@ -1512,5 +1512,155 @@
     ],
     "answerIndex": 1,
     "explanation": "The skeleton holds the body up, gives it shape, and protects organs like the heart and brain."
+  },
+  {
+    "id": "l-g4-t2-001",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: during photosynthesis, plants give off oxygen as a leftover.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "When plants make food using sunlight, they release oxygen into the air."
+  },
+  {
+    "id": "l-g4-t2-002",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: in your body, the small intestine helps soak up nutrients from the food you eat.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "The small intestine takes nutrients out of digested food and passes them into the blood."
+  },
+  {
+    "id": "l-g4-t2-003",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: a sunflower turning toward the sun shows that plants can respond to their surroundings.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Plants can react to light, water, and gravity, even though they cannot move from place to place."
+  },
+  {
+    "id": "l-g4-t2-004",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: decomposers, like mushrooms, help break down dead leaves and return nutrients to the soil.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Decomposers feed on dead material and put nutrients back into the soil for plants."
+  },
+  {
+    "id": "l-g4-t2-005",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: the lungs and the heart work together so the body can get oxygen.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lungs take oxygen from air, and the heart pumps blood that carries oxygen around the body."
+  },
+  {
+    "id": "l-g4-t2-006",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which raw materials does a plant need for photosynthesis?",
+    "choices": [
+      "Sunlight, water, and carbon dioxide",
+      "Soil, oxygen, and salt",
+      "Wind, rain, and rocks",
+      "Fire, water, and metal"
+    ],
+    "answerIndex": 0,
+    "explanation": "Plants combine sunlight, water, and carbon dioxide to make their own food."
+  },
+  {
+    "id": "l-g4-t2-007",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why is the sun important to a forest ecosystem?",
+    "choices": [
+      "It dries up all the rivers",
+      "It gives plants the energy to grow, which feeds other living things",
+      "It blows the leaves off the trees",
+      "It pushes animals to find food"
+    ],
+    "answerIndex": 1,
+    "explanation": "The sun's energy lets plants grow, and almost every other living thing depends on those plants for food."
+  },
+  {
+    "id": "l-g4-t2-008",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why is the brain protected by the skull?",
+    "choices": [
+      "So the brain can stay cold",
+      "Because the skull's hard bone keeps the soft brain safe",
+      "So the brain can hear better",
+      "So the brain stays the right color"
+    ],
+    "answerIndex": 1,
+    "explanation": "The skull is hard bone that protects the soft, important brain from injury."
+  },
+  {
+    "id": "l-g4-t2-009",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these best describes the job of muscles in the body?",
+    "choices": [
+      "They store food",
+      "They pull on bones to make the body move",
+      "They clean the blood",
+      "They send light signals to the eyes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Muscles tighten and pull on bones to make the body move."
+  },
+  {
+    "id": "l-g4-t2-010",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "What is one big difference between plants and animals?",
+    "choices": [
+      "Plants make their own food, while animals eat other living things",
+      "Plants are always larger than animals",
+      "Animals never need water, but plants always do",
+      "Plants have bones and animals do not"
+    ],
+    "answerIndex": 0,
+    "explanation": "Plants make food through photosynthesis, while animals must eat plants or other animals."
   }
 ]
