@@ -30,9 +30,19 @@ export function ResultScreen({ outcome, stars, points, hasNextLevel, onNext, onR
             </div>
           </>
         ) : (
-          <div className="text-base text-slate-900">
-            Your trainer was knocked out. Try again!
-          </div>
+          <>
+            <div className="text-base text-slate-900">
+              Your trainer was knocked out!
+            </div>
+            {points !== undefined && points > 0 && (
+              <div className="text-base text-slate-900 mt-2">
+                <span className="font-bold text-rose-600">−{points}</span> pts lost
+                <div className="text-xs text-slate-600 mt-1 normal-case tracking-normal">
+                  (half of your gold dropped in the panic)
+                </div>
+              </div>
+            )}
+          </>
         )}
       </div>
       <div className="flex gap-2 flex-wrap justify-center">

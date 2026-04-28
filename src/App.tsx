@@ -80,7 +80,15 @@ export default function App() {
 
   function handleLose() {
     if (screen.name !== "battle") return;
-    setScreen({ name: "result", outcome: "lose", levelId: screen.levelId });
+    let lostPoints = 0;
+    if (profile) {
+      lostPoints = Math.floor(profile.totalPoints / 2);
+      setProfile({
+        ...profile,
+        totalPoints: profile.totalPoints - lostPoints,
+      });
+    }
+    setScreen({ name: "result", outcome: "lose", levelId: screen.levelId, points: lostPoints });
   }
 
   function handleChangeGrade(g: Grade) {
@@ -113,6 +121,7 @@ export default function App() {
         allPowers={POWERS}
         onWin={handleWin}
         onLose={handleLose}
+        onRun={() => setScreen({ name: "map" })}
       />
     );
   }
