@@ -1662,5 +1662,157 @@
     ],
     "answerIndex": 0,
     "explanation": "Plants make food through photosynthesis, while animals must eat plants or other animals."
+  },
+  {
+    "id": "l-g4-t3-001",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: chlorophyll inside plant cells is what captures sunlight for photosynthesis.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Chlorophyll is the green pigment in plant cells that captures sunlight to make food."
+  },
+  {
+    "id": "l-g4-t3-002",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: if all the plants in an ecosystem disappeared, the animals there would still be fine.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Plants are the base of the food chain, so without them most animals would lose their food source."
+  },
+  {
+    "id": "l-g4-t3-003",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: the digestive system breaks food into smaller pieces so the body can use the nutrients.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Organs like the stomach and small intestine break food down so the body can absorb nutrients."
+  },
+  {
+    "id": "l-g4-t3-004",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a flower can become a fruit only after it has been pollinated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Pollination has to happen before a flower can develop into a fruit with seeds."
+  },
+  {
+    "id": "l-g4-t3-005",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which part of a plant cell is mainly in charge of photosynthesis?",
+    "choices": [
+      "Nucleus",
+      "Chloroplast",
+      "Cell wall",
+      "Vacuole"
+    ],
+    "answerIndex": 1,
+    "explanation": "Chloroplasts hold chlorophyll and are where photosynthesis happens inside plant cells."
+  },
+  {
+    "id": "l-g4-t3-006",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "A scientist puts a healthy plant in a sealed jar with no light at all. After a few weeks, what is most likely to happen?",
+    "choices": [
+      "The plant grows taller and greener",
+      "The plant gets weak and turns yellow",
+      "The plant turns into a flower",
+      "The plant changes into an animal"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without light, the plant cannot do photosynthesis, so it loses its green color and gets weak."
+  },
+  {
+    "id": "l-g4-t3-007",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which best describes the job of decomposers in an ecosystem?",
+    "choices": [
+      "They make food using sunlight",
+      "They hunt and eat large animals",
+      "They break down dead plants and animals and recycle nutrients",
+      "They block sunlight from reaching plants"
+    ],
+    "answerIndex": 2,
+    "explanation": "Decomposers like fungi and bacteria break down dead matter and return nutrients to the soil."
+  },
+  {
+    "id": "l-g4-t3-008",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Put these stages of a flowering plant's life in the right order: seed, seedling, mature plant with flowers, new seeds.",
+    "choices": [
+      "Mature plant, seed, seedling, new seeds",
+      "Seedling, seed, new seeds, mature plant",
+      "Seed, seedling, mature plant with flowers, new seeds",
+      "New seeds, mature plant, seed, seedling"
+    ],
+    "answerIndex": 2,
+    "explanation": "A flowering plant grows from a seed into a seedling, then a mature plant that flowers and makes new seeds."
+  },
+  {
+    "id": "l-g4-t3-009",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which group correctly lists three human body systems and one job each?",
+    "choices": [
+      "Skeletal: holds the body up; Circulatory: pumps blood; Respiratory: helps us breathe",
+      "Skeletal: digests food; Circulatory: makes bones; Respiratory: pumps blood",
+      "Skeletal: pumps blood; Circulatory: digests food; Respiratory: holds the body up",
+      "Skeletal: helps us see; Circulatory: helps us hear; Respiratory: makes us hungry"
+    ],
+    "answerIndex": 0,
+    "explanation": "The skeleton supports the body, the circulatory system pumps blood, and the respiratory system handles breathing."
+  },
+  {
+    "id": "l-g4-t3-010",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "In a meadow, grass grows using sunlight, and many small living things depend on that grass. What does this show about the sun?",
+    "choices": [
+      "The sun is just a source of warmth and nothing more",
+      "The sun is the starting energy source for the meadow's food web",
+      "The sun has no effect on plants or animals",
+      "The sun only matters in the desert"
+    ],
+    "answerIndex": 1,
+    "explanation": "The sun's energy lets plants grow, and that energy moves through the food web to other living things."
   }
 ]
