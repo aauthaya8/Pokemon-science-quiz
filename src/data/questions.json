@@ -1362,5 +1362,155 @@
     ],
     "answerIndex": 1,
     "explanation": "A plant starts as a seed, sprouts, grows into an adult plant, and then makes flowers and new seeds."
+  },
+  {
+    "id": "l-g4-t1-001",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: photosynthesis is the way plants make food using sunlight.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Photosynthesis is when plants use sunlight, water, and air to make their own food."
+  },
+  {
+    "id": "l-g4-t1-002",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: the heart, lungs, and stomach are all organs in the human body.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "An organ is a body part with a special job, and the heart, lungs, and stomach all are organs."
+  },
+  {
+    "id": "l-g4-t1-003",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: chlorophyll is the green color in leaves that helps plants catch sunlight.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Chlorophyll gives leaves their green color and helps them grab sunlight for photosynthesis."
+  },
+  {
+    "id": "l-g4-t1-004",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: human beings are made of many tiny cells.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "All living things, including humans, are made of cells, the smallest units of life."
+  },
+  {
+    "id": "l-g4-t1-005",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: the sun is the main source of energy for almost all life on Earth.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sunlight is the energy that plants use to make food, which feeds the rest of the food chain."
+  },
+  {
+    "id": "l-g4-t1-006",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which part of the plant holds the plant in the soil and takes in water?",
+    "choices": [
+      "Stem",
+      "Roots",
+      "Flower",
+      "Leaves"
+    ],
+    "answerIndex": 1,
+    "explanation": "Roots anchor the plant in the ground and pull water and minerals from the soil."
+  },
+  {
+    "id": "l-g4-t1-007",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What is the smallest building block of all living things?",
+    "choices": [
+      "Cell",
+      "Bone",
+      "Seed",
+      "Drop of water"
+    ],
+    "answerIndex": 0,
+    "explanation": "Cells are the smallest units of life that make up every living thing."
+  },
+  {
+    "id": "l-g4-t1-008",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which body part sends out signals so your other body parts know what to do?",
+    "choices": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Lungs"
+    ],
+    "answerIndex": 1,
+    "explanation": "The brain controls the body and sends signals through nerves."
+  },
+  {
+    "id": "l-g4-t1-009",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which gas do plants take in from the air to help make food?",
+    "choices": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Helium",
+      "Steam"
+    ],
+    "answerIndex": 1,
+    "explanation": "Plants take in carbon dioxide from the air during photosynthesis."
+  },
+  {
+    "id": "l-g4-t1-010",
+    "grade": 4,
+    "topic": "life",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is a job your skeleton does?",
+    "choices": [
+      "Digests your food",
+      "Gives the body shape and protects organs",
+      "Pumps blood through the body",
+      "Makes the body sweat"
+    ],
+    "answerIndex": 1,
+    "explanation": "The skeleton holds the body up, gives it shape, and protects organs like the heart and brain."
   }
 ]
