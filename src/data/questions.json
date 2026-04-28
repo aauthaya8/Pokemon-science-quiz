@@ -2270,5 +2270,157 @@
     ],
     "answerIndex": 0,
     "explanation": "Mercury is the planet closest to the Sun in our solar system."
+  },
+  {
+    "id": "e-g4-t1-001",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "There are eight planets in our solar system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Our solar system has eight planets, from Mercury to Neptune."
+  },
+  {
+    "id": "e-g4-t1-002",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "Earth orbits the Sun.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Earth travels around the Sun in a path called an orbit."
+  },
+  {
+    "id": "e-g4-t1-003",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "The atmosphere is the layer of air around Earth.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "The atmosphere is the blanket of gases that surrounds our planet."
+  },
+  {
+    "id": "e-g4-t1-004",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "Snow is a kind of precipitation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Precipitation is any water that falls from the sky, including rain, snow, sleet, and hail."
+  },
+  {
+    "id": "e-g4-t1-005",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which planet is known as the Red Planet?",
+    "choices": [
+      "Venus",
+      "Mars",
+      "Saturn",
+      "Mercury"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mars looks reddish because of iron-rich dust on its surface."
+  },
+  {
+    "id": "e-g4-t1-006",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which tool do scientists use to measure temperature?",
+    "choices": [
+      "Ruler",
+      "Thermometer",
+      "Scale",
+      "Microscope"
+    ],
+    "answerIndex": 1,
+    "explanation": "A thermometer measures how hot or cold something is."
+  },
+  {
+    "id": "e-g4-t1-007",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What do we call the path one object takes around another, like Earth around the Sun?",
+    "choices": [
+      "A spin",
+      "A bounce",
+      "An orbit",
+      "A jump"
+    ],
+    "answerIndex": 2,
+    "explanation": "The curved path one object takes around another is called an orbit."
+  },
+  {
+    "id": "e-g4-t1-008",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which season is usually the coldest in Canada?",
+    "choices": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
+    "answerIndex": 3,
+    "explanation": "Winter is the coldest season in places like Canada."
+  },
+  {
+    "id": "e-g4-t1-009",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is the largest planet in our solar system?",
+    "choices": [
+      "Earth",
+      "Saturn",
+      "Jupiter",
+      "Neptune"
+    ],
+    "answerIndex": 2,
+    "explanation": "Jupiter is the biggest planet in our solar system."
+  },
+  {
+    "id": "e-g4-t1-010",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What is the natural satellite that orbits Earth?",
+    "choices": [
+      "The Sun",
+      "Mars",
+      "The Moon",
+      "A comet"
+    ],
+    "answerIndex": 2,
+    "explanation": "The Moon is Earth's natural satellite, meaning it orbits Earth."
   }
 ]
