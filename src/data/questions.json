@@ -3486,5 +3486,157 @@
     ],
     "answerIndex": 0,
     "explanation": "Light travels much faster than sound, so we see the flash before we hear the thunder."
+  },
+  {
+    "id": "p-g4-t3-001",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: when forces on an object are balanced, the object's motion does not change.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Balanced forces cancel each other out, so the object stays still or keeps moving the same way."
+  },
+  {
+    "id": "p-g4-t3-002",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a wedge and a knife blade both work like an inclined ramp turned on its side to split things apart.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "A wedge is two slanted ramps put together, used to push things apart, just like a knife blade."
+  },
+  {
+    "id": "p-g4-t3-003",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: sound cannot travel through completely empty space because there is nothing to vibrate.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sound needs particles to carry the vibration, so it cannot travel through empty space like outer space."
+  },
+  {
+    "id": "p-g4-t3-004",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: when you see a green leaf, it is mostly reflecting green light into your eyes and absorbing the other colors.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "A leaf looks green because it reflects green light back to our eyes and absorbs the other colors."
+  },
+  {
+    "id": "p-g4-t3-005",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "You push a heavy crate across a floor with a steady push and it slides at a steady speed. What can you say about the forces on the crate?",
+    "choices": [
+      "Your push is stronger than friction",
+      "Friction is stronger than your push",
+      "Your push and friction are balanced",
+      "There is no friction at all"
+    ],
+    "answerIndex": 2,
+    "explanation": "If the speed stays the same, your push and the friction are equal and balanced."
+  },
+  {
+    "id": "p-g4-t3-006",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "A scientist wraps an iron nail in a wire and connects the wire to a battery. The nail starts to attract paperclips. What did the scientist make?",
+    "choices": [
+      "A simple lever",
+      "An electromagnet",
+      "A pulley system",
+      "A wedge"
+    ],
+    "answerIndex": 1,
+    "explanation": "An electric current in a coil around iron makes a magnet, called an electromagnet."
+  },
+  {
+    "id": "p-g4-t3-007",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Why does a metal spoon feel colder than a wooden spoon, even when both are at the same room temperature?",
+    "choices": [
+      "Metal is colder than wood by nature",
+      "Metal carries heat away from your hand quickly",
+      "Wood is warmer because it is soft",
+      "Metal stores cold inside it"
+    ],
+    "answerIndex": 1,
+    "explanation": "Metal moves heat away from your hand fast, which makes it feel cold even at the same temperature."
+  },
+  {
+    "id": "p-g4-t3-008",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "A pencil in a glass of water looks like it is broken or bent at the water line. What is happening to the light?",
+    "choices": [
+      "The light is changing colors",
+      "The light is bending as it passes from water to air",
+      "The pencil is actually breaking",
+      "The water is making sound waves"
+    ],
+    "answerIndex": 1,
+    "explanation": "Light bends when it moves between water and air, which makes the pencil look bent."
+  },
+  {
+    "id": "p-g4-t3-009",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Two cars are tied together with a rope. The first car pulls the second car forward. Which best describes the forces?",
+    "choices": [
+      "Only the first car has a force",
+      "The rope pulls the second car forward and tugs back on the first car",
+      "Ropes do not have any force",
+      "Gravity is the only force on the cars"
+    ],
+    "answerIndex": 1,
+    "explanation": "When the rope pulls the second car ahead, it also pulls back on the first car with the same force."
+  },
+  {
+    "id": "p-g4-t3-010",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "You add salt to a pot of water and the salt seems to disappear. What has most likely happened?",
+    "choices": [
+      "The salt evaporated into a gas",
+      "The salt dissolved and is mixed into the water",
+      "The salt turned into water",
+      "The salt became magnetic"
+    ],
+    "answerIndex": 1,
+    "explanation": "The salt dissolves in the water, breaking into tiny pieces that spread through the liquid."
   }
 ]
