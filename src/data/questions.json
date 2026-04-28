@@ -548,5 +548,115 @@
     "choices": ["Egg", "Tadpole", "Chrysalis", "Adult frog"],
     "answerIndex": 2,
     "explanation": "A chrysalis belongs to the butterfly life cycle; frogs go from egg to tadpole to froglet to adult."
+  },
+  {
+    "id": "a-g4-t3-001",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a platypus is a mammal even though it lays eggs.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Platypuses are unusual mammals that lay eggs but still feed milk to their young."
+  },
+  {
+    "id": "a-g4-t3-002",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a spider is an insect because it has more than four legs.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "Spiders are arachnids: they have eight legs and two body parts, while insects have six legs and three body parts."
+  },
+  {
+    "id": "a-g4-t3-003",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: monarch butterflies migrate thousands of kilometres to escape cold winters.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Monarchs travel from places like Canada all the way to Mexico to spend the winter where it is warm."
+  },
+  {
+    "id": "a-g4-t3-004",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: jellyfish are vertebrates because they live in the ocean.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "Jellyfish have no backbone, so they are invertebrates; living in the ocean does not make an animal a vertebrate."
+  },
+  {
+    "id": "a-g4-t3-005",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which of these animals would survive longest in a hot, dry desert?",
+    "choices": ["Polar bear", "Camel", "Penguin", "Salmon"],
+    "answerIndex": 1,
+    "explanation": "Camels can store fat in their humps and go many days without water, which fits desert life."
+  },
+  {
+    "id": "a-g4-t3-006",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "An animal is warm-blooded, has feathers, lays eggs, and has a beak. Which group does it belong to?",
+    "choices": ["Mammals", "Reptiles", "Birds", "Amphibians"],
+    "answerIndex": 2,
+    "explanation": "Feathers, beaks, and laying eggs are signs of birds, which are also warm-blooded."
+  },
+  {
+    "id": "a-g4-t3-007",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "In a food chain of grass, grasshopper, frog, and snake, what would most likely happen first if all the grasshoppers disappeared?",
+    "choices": ["The snakes would eat the grass", "The frogs would have less food", "The grass would die out", "The snakes would grow wings"],
+    "answerIndex": 1,
+    "explanation": "Frogs depend on grasshoppers for food, so losing them would leave frogs with less to eat."
+  },
+  {
+    "id": "a-g4-t3-008",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which animal is an invertebrate?",
+    "choices": ["Eagle", "Octopus", "Frog", "Salmon"],
+    "answerIndex": 1,
+    "explanation": "An octopus has no backbone, so it is an invertebrate; the others all have backbones."
+  },
+  {
+    "id": "a-g4-t3-009",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Why does an arctic fox grow a thick white coat in winter and a thinner brown coat in summer?",
+    "choices": ["To match the seasons for warmth and camouflage", "To trick other foxes into liking it", "Because its food changes color", "To make it run faster"],
+    "answerIndex": 0,
+    "explanation": "The thick white coat keeps it warm and hidden in snow, while the brown summer coat blends in with rocks and dirt."
+  },
+  {
+    "id": "a-g4-t3-010",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which list shows the correct order of a typical ocean food chain?",
+    "choices": ["Shark, small fish, tiny plankton", "Tiny plankton, small fish, shark", "Small fish, shark, tiny plankton", "Shark, tiny plankton, small fish"],
+    "answerIndex": 1,
+    "explanation": "A food chain starts with the smallest producer or prey: plankton are eaten by small fish, which are eaten by sharks."
   }
 ]
