@@ -3182,5 +3182,157 @@
     ],
     "answerIndex": 0,
     "explanation": "Sound travels through solids by making the material vibrate from one end to the other."
+  },
+  {
+    "id": "p-g4-t1-001",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: gravity is the force that pulls objects toward the Earth.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Gravity is the force that pulls everything on Earth down toward the ground."
+  },
+  {
+    "id": "p-g4-t1-002",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: matter on Earth is usually found as a solid, liquid, or gas.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Solid, liquid, and gas are the three common states of matter."
+  },
+  {
+    "id": "p-g4-t1-003",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a closed circuit is needed for electricity to flow and light a bulb.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Electricity flows only when the circuit forms a complete loop."
+  },
+  {
+    "id": "p-g4-t1-004",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: sound is made by vibrations.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "All sounds are caused by something vibrating, like a guitar string or a speaker."
+  },
+  {
+    "id": "p-g4-t1-005",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is a simple machine?",
+    "choices": [
+      "A pulley",
+      "A microwave",
+      "A computer",
+      "A clock"
+    ],
+    "answerIndex": 0,
+    "explanation": "A pulley is a simple machine that uses a wheel and a rope to lift things."
+  },
+  {
+    "id": "p-g4-t1-006",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which material is the best conductor of electricity?",
+    "choices": [
+      "Wood",
+      "Plastic",
+      "Copper",
+      "Glass"
+    ],
+    "answerIndex": 2,
+    "explanation": "Copper is a metal that lets electricity flow through it easily, so it is a good conductor."
+  },
+  {
+    "id": "p-g4-t1-007",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which is an example of a force?",
+    "choices": [
+      "A push",
+      "A color",
+      "A song",
+      "A smell"
+    ],
+    "answerIndex": 0,
+    "explanation": "A push is a kind of force that can move or stop an object."
+  },
+  {
+    "id": "p-g4-t1-008",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which object would a magnet attract?",
+    "choices": [
+      "A wooden block",
+      "An iron screw",
+      "A glass marble",
+      "A plastic toy"
+    ],
+    "answerIndex": 1,
+    "explanation": "Magnets attract objects made of iron, like an iron screw."
+  },
+  {
+    "id": "p-g4-t1-009",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is a natural source of light?",
+    "choices": [
+      "A flashlight",
+      "A lamp",
+      "The Sun",
+      "A TV screen"
+    ],
+    "answerIndex": 2,
+    "explanation": "The Sun is a natural source of light, while flashlights and lamps are made by people."
+  },
+  {
+    "id": "p-g4-t1-010",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What is the change called when a liquid turns into a solid?",
+    "choices": [
+      "Melting",
+      "Freezing",
+      "Boiling",
+      "Evaporating"
+    ],
+    "answerIndex": 1,
+    "explanation": "Freezing is when a liquid cools down enough to become a solid, like water becoming ice."
   }
 ]
