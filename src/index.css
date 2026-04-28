@@ -31,3 +31,9 @@ html, body, #root {
   100% { transform: scale(1); }
 }
 .animate-power-pop { animation: power-pop 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28); }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 4px 0 rgba(0,0,0,0.15); }
+  50%      { box-shadow: 0 4px 20px rgba(255,138,101,0.8); }
+}
+.animate-pulse-glow { animation: pulse-glow 1.4s ease-in-out infinite; }
