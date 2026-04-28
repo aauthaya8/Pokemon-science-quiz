@@ -23,3 +23,13 @@ test("all four topics present", () => {
   const topics = new Set(data.map(l => l.topic));
   ["animals","life","earth","physical","mixed"].forEach(t => expect(topics.has(t as Level["topic"])).toBe(true));
 });
+test("every level has a Pokémon ID", () => {
+  data.forEach(l => {
+    expect(typeof l.creaturePokemonId).toBe("number");
+    expect(l.creaturePokemonId).toBeGreaterThan(0);
+  });
+});
+test("Pokémon IDs are unique per level", () => {
+  const ids = data.map(l => l.creaturePokemonId);
+  expect(new Set(ids).size).toBe(ids.length);
+});

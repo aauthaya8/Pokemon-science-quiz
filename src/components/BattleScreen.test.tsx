@@ -4,7 +4,7 @@ import { BattleScreen } from "./BattleScreen";
 import type { Level, Question } from "../types";
 
 const level: Level = {
-  id: 1, topic: "animals", creatureName: "Squeaker", creatureEmoji: "🐹",
+  id: 1, topic: "animals", creatureName: "Pichu", creaturePokemonId: 172,
   creatureHp: 3, difficultyTier: 1, unlocksPower: null,
 };
 

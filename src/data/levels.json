@@ -1,14 +1,14 @@
 [
-  { "id": 1,  "topic": "animals",  "creatureName": "Squeaker",        "creatureEmoji": "🐹", "creatureHp": 3, "difficultyTier": 1, "unlocksPower": null },
-  { "id": 2,  "topic": "animals",  "creatureName": "Wolf Pup",        "creatureEmoji": "🐺", "creatureHp": 3, "difficultyTier": 1, "unlocksPower": "beastRoar" },
-  { "id": 3,  "topic": "life",     "creatureName": "Seedling Sprite", "creatureEmoji": "🌱", "creatureHp": 3, "difficultyTier": 1, "unlocksPower": null },
-  { "id": 4,  "topic": "life",     "creatureName": "Leaf Hopper",     "creatureEmoji": "🦗", "creatureHp": 3, "difficultyTier": 1, "unlocksPower": "vineWhip" },
-  { "id": 5,  "topic": "earth",    "creatureName": "Mini Meteor",     "creatureEmoji": "☄️", "creatureHp": 5, "difficultyTier": 2, "unlocksPower": null },
-  { "id": 6,  "topic": "earth",    "creatureName": "Ringed Wraith",   "creatureEmoji": "🪐", "creatureHp": 5, "difficultyTier": 2, "unlocksPower": "meteorStrike" },
-  { "id": 7,  "topic": "physical", "creatureName": "Spark Sprite",    "creatureEmoji": "⚡", "creatureHp": 5, "difficultyTier": 2, "unlocksPower": null },
-  { "id": 8,  "topic": "physical", "creatureName": "Magneton",        "creatureEmoji": "🧲", "creatureHp": 5, "difficultyTier": 2, "unlocksPower": "lightningBolt" },
-  { "id": 9,  "topic": "animals",  "creatureName": "Apex Lizard",     "creatureEmoji": "🦖", "creatureHp": 7, "difficultyTier": 3, "unlocksPower": null },
-  { "id": 10, "topic": "earth",    "creatureName": "Black Hole",      "creatureEmoji": "🌑", "creatureHp": 7, "difficultyTier": 3, "unlocksPower": "cosmicCrush" },
-  { "id": 11, "topic": "physical", "creatureName": "Lava Golem",      "creatureEmoji": "🌋", "creatureHp": 7, "difficultyTier": 3, "unlocksPower": null },
-  { "id": 12, "topic": "mixed",    "creatureName": "Final Boss",      "creatureEmoji": "👑", "creatureHp": 7, "difficultyTier": 3, "unlocksPower": "mastersSpark" }
+  { "id": 1,  "topic": "animals",  "creatureName": "Pichu",     "creaturePokemonId": 172, "creatureHp": 3, "difficultyTier": 1, "unlocksPower": null },
+  { "id": 2,  "topic": "animals",  "creatureName": "Lillipup",  "creaturePokemonId": 506, "creatureHp": 3, "difficultyTier": 1, "unlocksPower": "beastRoar" },
+  { "id": 3,  "topic": "life",     "creatureName": "Bulbasaur", "creaturePokemonId": 1,   "creatureHp": 3, "difficultyTier": 1, "unlocksPower": null },
+  { "id": 4,  "topic": "life",     "creatureName": "Caterpie",  "creaturePokemonId": 10,  "creatureHp": 3, "difficultyTier": 1, "unlocksPower": "vineWhip" },
+  { "id": 5,  "topic": "earth",    "creatureName": "Minior",    "creaturePokemonId": 774, "creatureHp": 5, "difficultyTier": 2, "unlocksPower": null },
+  { "id": 6,  "topic": "earth",    "creatureName": "Beheeyem",  "creaturePokemonId": 606, "creatureHp": 5, "difficultyTier": 2, "unlocksPower": "meteorStrike" },
+  { "id": 7,  "topic": "physical", "creatureName": "Voltorb",   "creaturePokemonId": 100, "creatureHp": 5, "difficultyTier": 2, "unlocksPower": null },
+  { "id": 8,  "topic": "physical", "creatureName": "Magneton",  "creaturePokemonId": 82,  "creatureHp": 5, "difficultyTier": 2, "unlocksPower": "lightningBolt" },
+  { "id": 9,  "topic": "animals",  "creatureName": "Charizard", "creaturePokemonId": 6,   "creatureHp": 7, "difficultyTier": 3, "unlocksPower": null },
+  { "id": 10, "topic": "earth",    "creatureName": "Cosmog",    "creaturePokemonId": 789, "creatureHp": 7, "difficultyTier": 3, "unlocksPower": "cosmicCrush" },
+  { "id": 11, "topic": "physical", "creatureName": "Magcargo",  "creaturePokemonId": 219, "creatureHp": 7, "difficultyTier": 3, "unlocksPower": null },
+  { "id": 12, "topic": "mixed",    "creatureName": "Mewtwo",    "creaturePokemonId": 150, "creatureHp": 7, "difficultyTier": 3, "unlocksPower": "mastersSpark" }
 ]

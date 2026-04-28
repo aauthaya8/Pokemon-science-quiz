@@ -22,7 +22,7 @@ export interface Level {
   id: number;
   topic: LevelTopic;
   creatureName: string;
-  creatureEmoji: string;
+  creaturePokemonId: number;
   creatureHp: number;
   difficultyTier: Tier;
   unlocksPower: string | null;
