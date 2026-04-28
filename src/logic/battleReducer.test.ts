@@ -76,10 +76,10 @@ describe("ANSWER_WRONG", () => {
     const next = battleReducer(session(), { type: "ANSWER_WRONG" });
     expect(next.currentQuestion.id).toBe("q2");
   });
-  test("reshuffles when pool exhausted", () => {
+  test("freezes on current question when pool exhausted (no crash)", () => {
     const s = session({ questionPool: [], currentQuestion: Q("q1") });
     const next = battleReducer(s, { type: "ANSWER_WRONG" });
-    // Falls back to current question repeated; no crash
-    expect(next.currentQuestion).toBeDefined();
+    expect(next.currentQuestion.id).toBe("q1");
+    expect(next.questionPool).toEqual([]);
   });
 });

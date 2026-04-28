@@ -28,6 +28,7 @@ export function battleReducer(state: BattleSession, action: BattleAction): Battl
       const nextStrikes = Math.min(3, state.strikes + 1) as Strikes;
       return {
         ...state,
+        // armedPowerId intentionally preserved — wrong answers don't waste a charged power (per spec)
         strikes: nextStrikes,
         ...advanceQuestion(state),
       };
@@ -35,6 +36,9 @@ export function battleReducer(state: BattleSession, action: BattleAction): Battl
   }
 }
 
+// Pool exhaustion is bounded out of practice (creatureHp + 5 buffer >> max possible questions per battle:
+// at most creatureHp right answers + 2 wrong answers before win/lose terminates). If somehow exhausted,
+// the current question stays put — battle continues toward win/lose, never crashes.
 function advanceQuestion(state: BattleSession): Pick<BattleSession, "currentQuestion" | "questionPool"> {
   if (state.questionPool.length === 0) {
     return { currentQuestion: state.currentQuestion, questionPool: [] };
