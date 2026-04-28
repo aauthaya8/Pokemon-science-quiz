@@ -1814,5 +1814,157 @@
     ],
     "answerIndex": 1,
     "explanation": "The sun's energy lets plants grow, and that energy moves through the food web to other living things."
+  },
+  {
+    "id": "e-g3-t1-001",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "The Sun is a star.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "The Sun is the closest star to Earth."
+  },
+  {
+    "id": "e-g3-t1-002",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "Earth has one moon.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Earth has exactly one natural moon."
+  },
+  {
+    "id": "e-g3-t1-003",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "Rain is a kind of weather.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Weather includes rain, snow, sun, and wind."
+  },
+  {
+    "id": "e-g3-t1-004",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "Clouds are made of water.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clouds are made of tiny drops of water or ice in the sky."
+  },
+  {
+    "id": "e-g3-t1-005",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which one of these gives us light during the day?",
+    "choices": [
+      "The Moon",
+      "The Sun",
+      "The stars",
+      "A streetlight"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Sun lights up our sky during the day."
+  },
+  {
+    "id": "e-g3-t1-006",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which planet do we live on?",
+    "choices": [
+      "Mars",
+      "Jupiter",
+      "Earth",
+      "Venus"
+    ],
+    "answerIndex": 2,
+    "explanation": "We live on the planet Earth."
+  },
+  {
+    "id": "e-g3-t1-007",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What falls from the sky during a rainstorm?",
+    "choices": [
+      "Sand",
+      "Water",
+      "Rocks",
+      "Leaves"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rain is water that falls from clouds."
+  },
+  {
+    "id": "e-g3-t1-008",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is a rock you might find outside?",
+    "choices": [
+      "A leaf",
+      "A pebble",
+      "A feather",
+      "A bug"
+    ],
+    "answerIndex": 1,
+    "explanation": "A pebble is a small rock."
+  },
+  {
+    "id": "e-g3-t1-009",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these can we see in the night sky?",
+    "choices": [
+      "Stars",
+      "The Sun",
+      "Rainbows",
+      "Snowflakes"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stars twinkle in the sky at night."
+  },
+  {
+    "id": "e-g3-t1-010",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What covers most of Earth's surface?",
+    "choices": [
+      "Forests",
+      "Sand",
+      "Water",
+      "Ice"
+    ],
+    "answerIndex": 2,
+    "explanation": "Most of Earth is covered by water in the oceans."
   }
 ]
