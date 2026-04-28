@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "id": "a-g3-t1-001",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a dog is a mammal.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Dogs have fur, breathe air, and feed milk to their babies, so they are mammals."
+  },
+  {
+    "id": "a-g3-t1-002",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a fish breathes air using lungs.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "Most fish use gills to take oxygen from the water, not lungs."
+  },
+  {
+    "id": "a-g3-t1-003",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: birds have feathers.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Feathers are a key feature that all birds share."
+  },
+  {
+    "id": "a-g3-t1-004",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a snake is an insect.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "A snake is a reptile; insects have six legs and three body parts."
+  },
+  {
+    "id": "a-g3-t1-005",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these animals lives in the ocean?",
+    "choices": ["Lion", "Shark", "Horse", "Eagle"],
+    "answerIndex": 1,
+    "explanation": "Sharks live in the ocean and swim using their fins."
+  },
+  {
+    "id": "a-g3-t1-006",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "How many legs does a spider have?",
+    "choices": ["6", "8", "4", "10"],
+    "answerIndex": 1,
+    "explanation": "Spiders have eight legs, which is one way to tell them apart from insects."
+  },
+  {
+    "id": "a-g3-t1-007",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which animal can fly?",
+    "choices": ["Penguin", "Ostrich", "Sparrow", "Cow"],
+    "answerIndex": 2,
+    "explanation": "Sparrows are small birds that fly through the air."
+  },
+  {
+    "id": "a-g3-t1-008",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What do baby cats drink from their mother?",
+    "choices": ["Water", "Milk", "Juice", "Soup"],
+    "answerIndex": 1,
+    "explanation": "Like all mammal babies, kittens drink milk from their mother."
+  },
+  {
+    "id": "a-g3-t1-009",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these animals is a reptile?",
+    "choices": ["Frog", "Lizard", "Rabbit", "Salmon"],
+    "answerIndex": 1,
+    "explanation": "Lizards have scales and lay eggs on land, which makes them reptiles."
+  },
+  {
+    "id": "a-g3-t1-010",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "What do cows mostly eat?",
+    "choices": ["Meat", "Grass", "Fish", "Bugs"],
+    "answerIndex": 1,
+    "explanation": "Cows are plant-eaters and mostly munch on grass and hay."
+  }
+]
