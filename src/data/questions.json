@@ -108,5 +108,115 @@
     "choices": ["Meat", "Grass", "Fish", "Bugs"],
     "answerIndex": 1,
     "explanation": "Cows are plant-eaters and mostly munch on grass and hay."
+  },
+  {
+    "id": "a-g3-t2-001",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: a green frog sitting on a green leaf is using camouflage.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Camouflage means blending in with surroundings, which the green frog does on a green leaf."
+  },
+  {
+    "id": "a-g3-t2-002",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: bears sleep through most of the winter to save energy when food is hard to find.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "This long winter sleep is called hibernation, and it helps bears survive when food is scarce."
+  },
+  {
+    "id": "a-g3-t2-003",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: in a food chain, the rabbit eats the fox.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "It is the other way around: the fox is the predator and the rabbit is its prey."
+  },
+  {
+    "id": "a-g3-t2-004",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: ducks have webbed feet to help them swim.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Webbed feet act like paddles, pushing water back so the duck moves forward."
+  },
+  {
+    "id": "a-g3-t2-005",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why do many birds fly south for the winter?",
+    "choices": ["To find warmer weather and more food", "To grow bigger wings", "To lay eggs in cold places", "To learn new songs"],
+    "answerIndex": 0,
+    "explanation": "This trip is called migration, and birds make it to find food and warmer weather."
+  },
+  {
+    "id": "a-g3-t2-006",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "A caterpillar will turn into which animal next in its life cycle?",
+    "choices": ["A bee", "A butterfly", "A bird", "A frog"],
+    "answerIndex": 1,
+    "explanation": "Caterpillars form a chrysalis and then come out as butterflies."
+  },
+  {
+    "id": "a-g3-t2-007",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which animal is best suited to live in a hot, dry desert?",
+    "choices": ["Polar bear", "Camel", "Penguin", "Frog"],
+    "answerIndex": 1,
+    "explanation": "Camels can go a long time without water and have wide feet that walk on sand."
+  },
+  {
+    "id": "a-g3-t2-008",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why does a giraffe have such a long neck?",
+    "choices": ["To run faster", "To reach leaves high up in trees", "To swim better", "To stay warm"],
+    "answerIndex": 1,
+    "explanation": "A long neck lets giraffes eat leaves from tall trees that other animals cannot reach."
+  },
+  {
+    "id": "a-g3-t2-009",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Grass is eaten by a grasshopper, and a bird eats the grasshopper. In this food chain, which one is the predator of the grasshopper?",
+    "choices": ["The grass", "The bird", "The grasshopper itself", "The sun"],
+    "answerIndex": 1,
+    "explanation": "The bird hunts and eats the grasshopper, so it is the grasshopper's predator."
+  },
+  {
+    "id": "a-g3-t2-010",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which body part helps a fish move and steer through the water?",
+    "choices": ["Its scales", "Its fins", "Its eyes", "Its teeth"],
+    "answerIndex": 1,
+    "explanation": "Fish push and turn through water using their fins."
   }
 ]
