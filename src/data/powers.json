@@ -1,0 +1,8 @@
+[
+  { "id": "beastRoar",     "name": "Beast Roar",      "emoji": "🦁", "topic": "animals",  "description": "A mighty roar that scares creatures and doubles your damage!" },
+  { "id": "vineWhip",      "name": "Vine Whip",       "emoji": "🌿", "topic": "life",     "description": "Wrap creatures in tangled vines for double damage!" },
+  { "id": "meteorStrike",  "name": "Meteor Strike",   "emoji": "☄️", "topic": "earth",    "description": "Call down a flaming meteor for double damage!" },
+  { "id": "lightningBolt", "name": "Lightning Bolt",  "emoji": "⚡", "topic": "physical", "description": "Zap creatures with electricity for double damage!" },
+  { "id": "cosmicCrush",   "name": "Cosmic Crush",    "emoji": "🌟", "topic": "any",      "description": "A burst of cosmic energy that smashes for double damage!" },
+  { "id": "mastersSpark",  "name": "Master's Spark",  "emoji": "🏆", "topic": "any",      "description": "The ultimate power — earned from beating the Final Boss!" }
+]
