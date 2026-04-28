@@ -8,3 +8,16 @@ html, body, #root {
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   background: #FFF8E1;
 }
+
+@keyframes creature-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+.animate-creature-bounce { animation: creature-bounce 1.6s ease-in-out infinite; }
+
+@keyframes hit-flash {
+  0%, 100% { filter: none; transform: translateX(0); }
+  25%      { filter: brightness(2) hue-rotate(-30deg); transform: translateX(-6px); }
+  75%      { filter: brightness(2) hue-rotate(-30deg); transform: translateX(6px); }
+}
+.animate-hit-flash { animation: hit-flash 0.4s ease-in-out 1; }
