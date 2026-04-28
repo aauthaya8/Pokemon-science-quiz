@@ -328,5 +328,115 @@
     "choices": ["Egg, butterfly, caterpillar, chrysalis", "Caterpillar, egg, chrysalis, butterfly", "Egg, caterpillar, chrysalis, butterfly", "Chrysalis, egg, caterpillar, butterfly"],
     "answerIndex": 2,
     "explanation": "A butterfly starts as an egg, hatches into a caterpillar, forms a chrysalis, and finally becomes a butterfly."
+  },
+  {
+    "id": "a-g4-t1-001",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a bat is a mammal.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Bats have fur, are warm-blooded, and feed milk to their young, so they are mammals even though they fly."
+  },
+  {
+    "id": "a-g4-t1-002",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: a dolphin is a fish.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "Dolphins are mammals; they breathe air through a blowhole and feed milk to their babies."
+  },
+  {
+    "id": "a-g4-t1-003",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: insects are invertebrates because they do not have a backbone.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Animals without a backbone are called invertebrates, and insects do not have a backbone."
+  },
+  {
+    "id": "a-g4-t1-004",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "tf",
+    "prompt": "True or false: amphibians like frogs usually start life in water.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Most amphibians lay eggs in water, and the young breathe with gills before growing into adults."
+  },
+  {
+    "id": "a-g4-t1-005",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "An octopus has how many arms?",
+    "choices": ["Six", "Eight", "Ten", "Four"],
+    "answerIndex": 1,
+    "explanation": "The prefix 'octo-' means eight, and an octopus has eight arms."
+  },
+  {
+    "id": "a-g4-t1-006",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these animals is cold-blooded?",
+    "choices": ["Dog", "Eagle", "Lizard", "Cow"],
+    "answerIndex": 2,
+    "explanation": "Reptiles like lizards are cold-blooded, which means their body temperature changes with the air around them."
+  },
+  {
+    "id": "a-g4-t1-007",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which animal lives in the African savanna?",
+    "choices": ["Polar bear", "Zebra", "Penguin", "Moose"],
+    "answerIndex": 1,
+    "explanation": "Zebras roam the grassy plains of the African savanna in herds."
+  },
+  {
+    "id": "a-g4-t1-008",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which group does a sea turtle belong to?",
+    "choices": ["Mammals", "Birds", "Reptiles", "Fish"],
+    "answerIndex": 2,
+    "explanation": "Sea turtles have scales and lay eggs on land, which makes them reptiles."
+  },
+  {
+    "id": "a-g4-t1-009",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which of these is an example of a vertebrate?",
+    "choices": ["Worm", "Spider", "Cat", "Jellyfish"],
+    "answerIndex": 2,
+    "explanation": "Vertebrates have a backbone, and a cat has a backbone running down its spine."
+  },
+  {
+    "id": "a-g4-t1-010",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "mc",
+    "prompt": "Which animal is famous for moving very slowly through the trees of the rainforest?",
+    "choices": ["Cheetah", "Sloth", "Kangaroo", "Wolf"],
+    "answerIndex": 1,
+    "explanation": "Sloths hang from rainforest trees and move very slowly to save energy."
   }
 ]
