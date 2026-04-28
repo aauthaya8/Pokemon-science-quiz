@@ -2422,5 +2422,157 @@
     ],
     "answerIndex": 2,
     "explanation": "The Moon is Earth's natural satellite, meaning it orbits Earth."
+  },
+  {
+    "id": "e-g4-t2-001",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "Evaporation is when liquid water turns into water vapor and rises into the air.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Evaporation changes liquid water into a gas called water vapor."
+  },
+  {
+    "id": "e-g4-t2-002",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "Earth spins on an imaginary line called its axis.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Earth's axis is the imaginary line through its North and South Poles."
+  },
+  {
+    "id": "e-g4-t2-003",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "Stars look small because they are very far away from Earth.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Stars are huge, but they look like tiny dots because they are extremely far away."
+  },
+  {
+    "id": "e-g4-t2-004",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "Mountains can form when huge pieces of Earth's crust push against each other.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "When pieces of Earth's crust collide, the ground can fold and rise into mountains."
+  },
+  {
+    "id": "e-g4-t2-005",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why do we have day and night?",
+    "choices": [
+      "Earth orbits the Sun once a day",
+      "Earth rotates on its axis about once every 24 hours",
+      "Clouds cover the Sun at night",
+      "The Sun turns off at night"
+    ],
+    "answerIndex": 1,
+    "explanation": "Earth's rotation makes one part face the Sun (day) while the other faces away (night)."
+  },
+  {
+    "id": "e-g4-t2-006",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "What step of the water cycle happens when water vapor cools and turns back into tiny water drops in the sky?",
+    "choices": [
+      "Evaporation",
+      "Condensation",
+      "Precipitation",
+      "Erosion"
+    ],
+    "answerIndex": 1,
+    "explanation": "Condensation is when water vapor cools and changes into tiny water drops that form clouds."
+  },
+  {
+    "id": "e-g4-t2-007",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these best explains why we have seasons?",
+    "choices": [
+      "Earth gets closer and farther from the Sun a lot during the year",
+      "Earth's axis is tilted, so different parts get more direct sunlight at different times",
+      "The Moon blocks the Sun in summer",
+      "The Sun is hotter in summer than in winter"
+    ],
+    "answerIndex": 1,
+    "explanation": "Because Earth's axis is tilted, different parts of Earth get more direct sunlight at different times of year."
+  },
+  {
+    "id": "e-g4-t2-008",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which planet is the closest neighbor to Earth on the side away from the Sun?",
+    "choices": [
+      "Venus",
+      "Mars",
+      "Mercury",
+      "Jupiter"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mars is Earth's neighbor on the side farther from the Sun."
+  },
+  {
+    "id": "e-g4-t2-009",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these is most likely to break a rock into smaller pieces over many years?",
+    "choices": [
+      "Sunlight only",
+      "Water freezing in cracks and ice melting again",
+      "A single rainstorm",
+      "A bird sitting on it"
+    ],
+    "answerIndex": 1,
+    "explanation": "Water that freezes in cracks expands and pushes the rock apart over time. This is called weathering."
+  },
+  {
+    "id": "e-g4-t2-010",
+    "grade": 4,
+    "topic": "earth",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which two layers make up most of Earth's atmosphere by gas?",
+    "choices": [
+      "Hydrogen and helium",
+      "Nitrogen and oxygen",
+      "Carbon dioxide and methane",
+      "Steam and smoke"
+    ],
+    "answerIndex": 1,
+    "explanation": "Earth's air is mostly nitrogen with some oxygen, plus small amounts of other gases."
   }
 ]
