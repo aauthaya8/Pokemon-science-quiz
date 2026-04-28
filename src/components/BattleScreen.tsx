@@ -85,28 +85,47 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
   }, [state.creatureHpRemaining, state.strikes]);
 
   return (
-    <div className="flex flex-col items-center gap-4 p-4 max-w-xl mx-auto">
-      <div className="relative w-full rounded-chunky bg-gradient-to-b from-sky-100 to-green-100 border-b-4 border-amber-300 px-4 py-6 overflow-hidden">
-        <div className="flex justify-between items-end gap-4">
-          <div className="relative flex-1 flex justify-center">
-            <PlayerAvatar armed={state.armedPowerId !== null} hitFlash={kidHitFlash} />
-            {damagePopup && damagePopup.side === "kid" && (
-              <DamagePopup key={damagePopup.key} value={damagePopup.value} side="kid" />
-            )}
-          </div>
-          <div className="relative flex-1 flex justify-center">
+    <div className="flex flex-col items-stretch gap-3 p-3 max-w-xl mx-auto">
+      {/* Battle banner */}
+      <div className="bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-3 py-2 text-center font-mono">
+        <span className="text-sm sm:text-base font-bold tracking-wider text-slate-900 uppercase">
+          Wild {level.creatureName} appeared!
+        </span>
+      </div>
+
+      {/* Battlefield */}
+      <div className="relative w-full rounded-md border-[3px] border-slate-900 shadow-[3px_3px_0_#0f172a] bg-gradient-to-b from-sky-400 via-sky-200 to-amber-200 overflow-hidden">
+        {/* Ground line */}
+        <div className="absolute left-0 right-0 bottom-24 h-[3px] bg-slate-900/40 z-0" />
+        <div className="absolute left-0 right-0 bottom-0 h-24 bg-gradient-to-b from-amber-200 to-amber-300 z-0" />
+
+        {/* Opponent: top-right */}
+        <div className="relative z-10 flex justify-end pr-4 pt-4">
+          <div className="relative">
             <Creature
-              emoji={level.creatureEmoji}
+              pokemonId={level.creaturePokemonId}
               name={level.creatureName}
               hp={state.creatureHpRemaining}
               maxHp={level.creatureHp}
               hitFlash={hitFlash}
+              size="lg"
             />
             {damagePopup && damagePopup.side === "creature" && (
               <DamagePopup key={damagePopup.key} value={damagePopup.value} side="creature" />
             )}
           </div>
         </div>
+
+        {/* Player: bottom-left */}
+        <div className="relative z-10 flex justify-start pl-4 pb-4 -mt-4">
+          <div className="relative">
+            <PlayerAvatar armed={state.armedPowerId !== null} hitFlash={kidHitFlash} />
+            {damagePopup && damagePopup.side === "kid" && (
+              <DamagePopup key={damagePopup.key} value={damagePopup.value} side="kid" />
+            )}
+          </div>
+        </div>
+
         {projectile && (
           <AttackProjectile
             key={projectile.key}
@@ -115,17 +134,28 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
           />
         )}
       </div>
-      <StrikeCounter strikes={state.strikes} />
+
+      {/* Strikes / Lives */}
+      <div className="flex justify-end">
+        <StrikeCounter strikes={state.strikes} />
+      </div>
+
+      {/* Question / dialog box (replaces FIGHT/BAG/PKMN/RUN menu) */}
       {explanation ? (
-        <div className={`p-4 rounded-chunky text-center font-bold ${
-          explanation.correct ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
-        }`}>
-          {explanation.correct ? "✅ Right!" : "❌ Not quite."}
+        <div
+          className={`p-4 border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] font-mono text-base ${
+            explanation.correct ? "bg-emerald-100 text-emerald-900" : "bg-rose-100 text-rose-900"
+          }`}
+        >
+          <div className="font-bold uppercase tracking-wide">
+            {explanation.correct ? "Critical hit!" : "It missed!"}
+          </div>
           {explanation.text && <div className="text-sm font-normal mt-1">{explanation.text}</div>}
         </div>
       ) : (
         <QuestionCard question={state.currentQuestion} onAnswer={handleAnswer} />
       )}
+
       <PowerBar
         all={allPowers}
         unlockedIds={unlockedPowers}
