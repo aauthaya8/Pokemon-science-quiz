@@ -37,3 +37,33 @@ html, body, #root {
   50%      { box-shadow: 0 4px 20px rgba(255,138,101,0.8); }
 }
 .animate-pulse-glow { animation: pulse-glow 1.4s ease-in-out infinite; }
+
+@keyframes attack-fly-right {
+  0%   { transform: translateX(0)    scale(0.8) rotate(0deg);   opacity: 0; }
+  10%  {                                                         opacity: 1; }
+  90%  {                                                         opacity: 1; }
+  100% { transform: translateX(280px) scale(1.4) rotate(360deg); opacity: 0; }
+}
+.animate-attack-fly-right { animation: attack-fly-right 0.6s ease-out 1 forwards; }
+
+@keyframes attack-fly-left {
+  0%   { transform: translateX(0)     scale(0.8) rotate(0deg);    opacity: 0; }
+  10%  {                                                           opacity: 1; }
+  90%  {                                                           opacity: 1; }
+  100% { transform: translateX(-280px) scale(1.4) rotate(-360deg); opacity: 0; }
+}
+.animate-attack-fly-left { animation: attack-fly-left 0.6s ease-out 1 forwards; }
+
+@keyframes damage-pop {
+  0%   { transform: translateY(0)     scale(0.6); opacity: 0; }
+  20%  { transform: translateY(-8px)  scale(1.2); opacity: 1; }
+  100% { transform: translateY(-40px) scale(1);   opacity: 0; }
+}
+.animate-damage-pop { animation: damage-pop 0.8s ease-out 1 forwards; }
+
+@keyframes kid-hit-flash {
+  0%, 100% { filter: none;                                  transform: translateX(0); }
+  25%      { filter: brightness(1.6) sepia(1) hue-rotate(-30deg) saturate(6); transform: translateX(6px); }
+  75%      { filter: brightness(1.6) sepia(1) hue-rotate(-30deg) saturate(6); transform: translateX(-6px); }
+}
+.animate-kid-hit-flash { animation: kid-hit-flash 0.4s ease-in-out 1; }
