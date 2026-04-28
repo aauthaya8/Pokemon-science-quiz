@@ -438,5 +438,115 @@
     "choices": ["Cheetah", "Sloth", "Kangaroo", "Wolf"],
     "answerIndex": 1,
     "explanation": "Sloths hang from rainforest trees and move very slowly to save energy."
+  },
+  {
+    "id": "a-g4-t2-001",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: polar bears have white fur to help them blend in with snow and ice when hunting.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "White fur is a camouflage adaptation that helps polar bears sneak up on seals across the ice."
+  },
+  {
+    "id": "a-g4-t2-002",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: chameleons can change color to communicate or to blend in with their surroundings.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Chameleons change color for camouflage, to react to temperature, and to send signals to other chameleons."
+  },
+  {
+    "id": "a-g4-t2-003",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: in a typical food chain, plants come before plant-eating animals.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Plants make their own food using sunlight, and herbivores eat them, so plants come first."
+  },
+  {
+    "id": "a-g4-t2-004",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: a snake is warm-blooded like a human.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "Snakes are reptiles, which are cold-blooded, so their body temperature depends on their surroundings."
+  },
+  {
+    "id": "a-g4-t2-005",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why do many fish swim together in large groups called schools?",
+    "choices": ["To stay warm in cold water", "To make it harder for predators to catch them", "To take turns sleeping", "To grow bigger fins"],
+    "answerIndex": 1,
+    "explanation": "A big swirling school confuses predators and lowers each fish's chance of being eaten."
+  },
+  {
+    "id": "a-g4-t2-006",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these is the best example of an adaptation for hibernation?",
+    "choices": ["A bird's hollow bones", "A bear storing extra body fat in autumn", "A fish's scales", "A snake's forked tongue"],
+    "answerIndex": 1,
+    "explanation": "Bears build up body fat so they have stored energy to survive a long winter sleep."
+  },
+  {
+    "id": "a-g4-t2-007",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which animal is a herbivore?",
+    "choices": ["Lion", "Shark", "Cow", "Hawk"],
+    "answerIndex": 2,
+    "explanation": "Herbivores eat only plants, and cows munch on grass and hay all day."
+  },
+  {
+    "id": "a-g4-t2-008",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why is the rabbit called the prey in the food chain 'grass, rabbit, fox'?",
+    "choices": ["Because it eats grass", "Because the fox hunts and eats it", "Because it has soft fur", "Because it is warm-blooded"],
+    "answerIndex": 1,
+    "explanation": "Prey are animals that get hunted; the fox is the predator that hunts the rabbit."
+  },
+  {
+    "id": "a-g4-t2-009",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which adaptation best helps a desert lizard survive in very hot weather?",
+    "choices": ["Thick layers of fur", "Hiding under rocks during the hottest part of the day", "Living deep underwater", "Having no scales at all"],
+    "answerIndex": 1,
+    "explanation": "Many desert animals stay cool by hiding in shade or burrows when the sun is strongest."
+  },
+  {
+    "id": "a-g4-t2-010",
+    "grade": 4,
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these is NOT a stage in the life cycle of a frog?",
+    "choices": ["Egg", "Tadpole", "Chrysalis", "Adult frog"],
+    "answerIndex": 2,
+    "explanation": "A chrysalis belongs to the butterfly life cycle; frogs go from egg to tadpole to froglet to adult."
   }
 ]
