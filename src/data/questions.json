@@ -218,5 +218,115 @@
     "choices": ["Its scales", "Its fins", "Its eyes", "Its teeth"],
     "answerIndex": 1,
     "explanation": "Fish push and turn through water using their fins."
+  },
+  {
+    "id": "a-g3-t3-001",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a whale is a fish because it lives in the ocean.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "Whales live in water but are mammals: they breathe air, are warm-blooded, and feed milk to their babies."
+  },
+  {
+    "id": "a-g3-t3-002",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: if all the grass died, both the rabbits and the foxes that eat the rabbits would be in trouble.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Without grass, rabbits would not have food, and without rabbits, foxes would lose their prey."
+  },
+  {
+    "id": "a-g3-t3-003",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a tadpole and an adult frog look almost exactly the same.",
+    "choices": ["True", "False"],
+    "answerIndex": 1,
+    "explanation": "Tadpoles live in water and have tails and gills, while adult frogs have legs and can breathe air."
+  },
+  {
+    "id": "a-g3-t3-004",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "True or false: a chicken is a bird, even though it usually does not fly far.",
+    "choices": ["True", "False"],
+    "answerIndex": 0,
+    "explanation": "Chickens have feathers, beaks, and lay eggs, so they are birds even though they fly only short distances."
+  },
+  {
+    "id": "a-g3-t3-005",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which of these animals would survive longest in a snowy polar habitat?",
+    "choices": ["Lizard", "Polar bear", "Frog", "Parrot"],
+    "answerIndex": 1,
+    "explanation": "Polar bears have thick fur and a layer of fat that keep them warm in icy places."
+  },
+  {
+    "id": "a-g3-t3-006",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "An animal lays eggs, has dry scales, and lies in the sun to warm up. Which group does it belong to?",
+    "choices": ["Mammals", "Reptiles", "Birds", "Fish"],
+    "answerIndex": 1,
+    "explanation": "Reptiles have dry scales, lay eggs, and use the sun to warm their bodies."
+  },
+  {
+    "id": "a-g3-t3-007",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "In a forest food chain, the order goes plant, then deer, then wolf. What would most likely happen if all the wolves disappeared?",
+    "choices": ["The grass would die first", "There would be more deer than before", "The trees would grow shorter", "The deer would also disappear"],
+    "answerIndex": 1,
+    "explanation": "Without wolves to hunt them, deer numbers would grow because they have fewer predators."
+  },
+  {
+    "id": "a-g3-t3-008",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which animal is an amphibian?",
+    "choices": ["Turtle", "Salamander", "Goldfish", "Sparrow"],
+    "answerIndex": 1,
+    "explanation": "Salamanders start life in water with gills and grow into adults that can live on land."
+  },
+  {
+    "id": "a-g3-t3-009",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which feature would best help an animal hide from predators in a green forest?",
+    "choices": ["Bright orange fur", "Green and brown spots", "A loud roar", "Shiny silver scales"],
+    "answerIndex": 1,
+    "explanation": "Green and brown patterns blend in with leaves and trees, so predators have a harder time seeing the animal."
+  },
+  {
+    "id": "a-g3-t3-010",
+    "grade": 3,
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which list shows the life cycle of a butterfly in the right order?",
+    "choices": ["Egg, butterfly, caterpillar, chrysalis", "Caterpillar, egg, chrysalis, butterfly", "Egg, caterpillar, chrysalis, butterfly", "Chrysalis, egg, caterpillar, butterfly"],
+    "answerIndex": 2,
+    "explanation": "A butterfly starts as an egg, hatches into a caterpillar, forms a chrysalis, and finally becomes a butterfly."
   }
 ]
