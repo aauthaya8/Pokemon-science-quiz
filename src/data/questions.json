@@ -2118,5 +2118,157 @@
     ],
     "answerIndex": 2,
     "explanation": "The Sun is much bigger than Earth or the Moon."
+  },
+  {
+    "id": "e-g3-t3-001",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "A volcano can let melted rock from inside Earth come up to the surface.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "A volcano is an opening where hot, melted rock from inside Earth can come out."
+  },
+  {
+    "id": "e-g3-t3-002",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "Earth is the only planet in our solar system that has liquid water on its surface.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Earth is the only planet known to have lots of liquid water on its surface."
+  },
+  {
+    "id": "e-g3-t3-003",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "There are seven continents on Earth.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Earth has seven continents: Africa, Antarctica, Asia, Australia, Europe, North America, and South America."
+  },
+  {
+    "id": "e-g3-t3-004",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "tf",
+    "prompt": "Earthquakes happen when the ground inside Earth suddenly moves.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "An earthquake is the shaking of the ground caused by sudden movement deep in Earth."
+  },
+  {
+    "id": "e-g3-t3-005",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Look at this story: a puddle dries up in the sun, water vapor goes up to make a cloud, and then rain falls. What is this called?",
+    "choices": [
+      "The food chain",
+      "The water cycle",
+      "A volcano",
+      "A season"
+    ],
+    "answerIndex": 1,
+    "explanation": "This pattern of water moving as vapor, clouds, and rain is the water cycle."
+  },
+  {
+    "id": "e-g3-t3-006",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Imagine standing outside at noon. The Sun is high. A few hours later, the Sun looks lower in the sky. Why?",
+    "choices": [
+      "The Sun is moving away from Earth",
+      "Earth is spinning, so our view of the Sun changes",
+      "Clouds are pushing the Sun down",
+      "The Sun is getting tired"
+    ],
+    "answerIndex": 1,
+    "explanation": "Earth spins on its axis, which makes the Sun look like it moves across the sky."
+  },
+  {
+    "id": "e-g3-t3-007",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which of these is NOT one of the four big oceans on Earth?",
+    "choices": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Sahara Ocean",
+      "Indian Ocean"
+    ],
+    "answerIndex": 2,
+    "explanation": "The Sahara is a desert, not an ocean. Oceans include the Pacific, Atlantic, Indian, and Arctic."
+  },
+  {
+    "id": "e-g3-t3-008",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Why does a year on Earth take 365 days?",
+    "choices": [
+      "Earth spins around 365 times each day",
+      "It takes Earth that long to go all the way around the Sun once",
+      "The Moon goes around Earth 365 times in a day",
+      "Each season lasts 365 days"
+    ],
+    "answerIndex": 1,
+    "explanation": "A year is the time Earth takes to travel one full path around the Sun, about 365 days."
+  },
+  {
+    "id": "e-g3-t3-009",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which kind of rock starts as soft layers of sand or mud that get pressed together over time?",
+    "choices": [
+      "Igneous rock",
+      "Sedimentary rock",
+      "Metal",
+      "Plastic"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sedimentary rock forms when layers of small bits like sand and mud get squeezed together."
+  },
+  {
+    "id": "e-g3-t3-010",
+    "grade": 3,
+    "topic": "earth",
+    "difficulty": 3,
+    "type": "mc",
+    "prompt": "Which planet is closest to the Sun?",
+    "choices": [
+      "Mercury",
+      "Earth",
+      "Saturn",
+      "Neptune"
+    ],
+    "answerIndex": 0,
+    "explanation": "Mercury is the planet closest to the Sun in our solar system."
   }
 ]
