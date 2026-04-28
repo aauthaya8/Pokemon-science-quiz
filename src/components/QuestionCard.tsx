@@ -12,7 +12,7 @@ export function QuestionCard({ question, onAnswer, disabled }: Props) {
       <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
         {question.prompt}
       </h2>
-      <div className={`grid ${question.type === "tf" ? "grid-cols-2" : "grid-cols-2"} gap-3`}>
+      <div className="grid grid-cols-2 gap-3">
         {question.choices.map((choice, i) => (
           <button
             key={i}
