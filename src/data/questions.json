@@ -3334,5 +3334,157 @@
     ],
     "answerIndex": 1,
     "explanation": "Freezing is when a liquid cools down enough to become a solid, like water becoming ice."
+  },
+  {
+    "id": "p-g4-t2-001",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: friction usually slows down moving objects.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Friction is a force that pushes against motion and slows things down."
+  },
+  {
+    "id": "p-g4-t2-002",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: a high-pitched whistle is made by very fast vibrations.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "Faster vibrations make higher pitched sounds, while slower vibrations make lower sounds."
+  },
+  {
+    "id": "p-g4-t2-003",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: white light from the Sun is made up of many different colors.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "explanation": "White light is a mix of all rainbow colors, which can be seen when light passes through a prism."
+  },
+  {
+    "id": "p-g4-t2-004",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "tf",
+    "prompt": "True or false: the north end of one magnet will attract the north end of another magnet.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "explanation": "Two of the same poles push apart; only opposite poles like north and south attract each other."
+  },
+  {
+    "id": "p-g4-t2-005",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why does ice melt when you put it in a warm glass of water?",
+    "choices": [
+      "The water freezes the ice harder",
+      "Heat from the warm water moves into the ice and melts it",
+      "The ice gives off cold air",
+      "The glass turns the ice into a liquid"
+    ],
+    "answerIndex": 1,
+    "explanation": "Heat moves from the warm water into the ice, making the ice change from solid to liquid."
+  },
+  {
+    "id": "p-g4-t2-006",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which simple machine is a screw most like?",
+    "choices": [
+      "A pulley",
+      "A lever",
+      "A ramp wrapped around a pole",
+      "A flat wedge"
+    ],
+    "answerIndex": 2,
+    "explanation": "A screw is shaped like a slanted ramp wrapped in a spiral around a pole."
+  },
+  {
+    "id": "p-g4-t2-007",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Which of these would be the BEST insulator to keep electricity from leaving a wire?",
+    "choices": [
+      "Aluminum foil",
+      "A rubber coating",
+      "A copper sleeve",
+      "A steel wrap"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rubber is an insulator that blocks electricity, which is why wires are wrapped in it."
+  },
+  {
+    "id": "p-g4-t2-008",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "What happens to most of the air in a balloon when you put the balloon in a freezer?",
+    "choices": [
+      "It gets warmer and pushes harder",
+      "It cools down and the balloon shrinks",
+      "It turns into water right away",
+      "It becomes magnetic"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cool air takes up less space, so the balloon shrinks when it gets cold."
+  },
+  {
+    "id": "p-g4-t2-009",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "Why do bike riders wear smooth, shiny clothes in races?",
+    "choices": [
+      "To look fancy",
+      "To reduce friction with the air so they go faster",
+      "To attract magnets",
+      "To hold more electricity"
+    ],
+    "answerIndex": 1,
+    "explanation": "Smooth clothes have less friction with the air, helping the rider move faster."
+  },
+  {
+    "id": "p-g4-t2-010",
+    "grade": 4,
+    "topic": "physical",
+    "difficulty": 2,
+    "type": "mc",
+    "prompt": "You see lightning in the sky and then hear the thunder a few seconds later. Why don't they reach you at the same time?",
+    "choices": [
+      "Light travels much faster than sound",
+      "Thunder is louder than lightning",
+      "The lightning starts later",
+      "Sound stops in the air for a bit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Light travels much faster than sound, so we see the flash before we hear the thunder."
   }
 ]
