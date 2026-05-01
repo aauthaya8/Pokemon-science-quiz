@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Grade, Level, Profile } from "../types";
 import { isLevelUnlocked, nextPlayableLevel } from "../logic/levelUnlock";
 import { SettingsPanel } from "./SettingsPanel";
+import { MuteToggle } from "./MuteToggle";
 
 interface Props {
   levels: Level[];
@@ -16,6 +17,9 @@ export function LevelSelect({ levels, profile, onSelect, onChangeGrade }: Props)
 
   return (
     <div className="p-4 sm:p-6 relative min-h-full bg-gradient-to-b from-sky-300 via-sky-100 to-amber-100">
+      <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
+        <MuteToggle />
+      </div>
       <button
         aria-label="Settings"
         className="absolute top-3 right-3 sm:top-4 sm:right-4 text-2xl bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] w-11 h-11 flex items-center justify-center"
