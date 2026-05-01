@@ -2,6 +2,8 @@ import { useReducer, useState, useEffect, useRef } from "react";
 import type { Level, Power, Question } from "../types";
 import { battleReducer } from "../logic/battleReducer";
 import { starsForStrikes } from "../logic/scoring";
+import { isSuperEffective } from "../logic/typeEffectiveness";
+import { playSound, playMusic, stopMusic } from "../logic/sound";
 import { Creature } from "./Creature";
 import { StrikeCounter } from "./StrikeCounter";
 import { QuestionCard } from "./QuestionCard";
@@ -9,6 +11,8 @@ import { PowerBar } from "./PowerBar";
 import { PlayerAvatar } from "./PlayerAvatar";
 import { AttackProjectile } from "./AttackProjectile";
 import { DamagePopup } from "./DamagePopup";
+import { DialogueRibbon } from "./DialogueRibbon";
+import { MuteToggle } from "./MuteToggle";
 
 interface Props {
   level: Level;
@@ -19,6 +23,10 @@ interface Props {
   onLose: () => void;
   onRun?: () => void;
 }
+
+const DIALOGUE_LINE_MS = 1400;
+const CRIT_CHANCE = 0.125;
+const PLAYER_NAME = "AVI";
 
 export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWin, onLose, onRun }: Props) {
   const [first, ...rest] = questions;
@@ -34,16 +42,41 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
   const [explanation, setExplanation] = useState<{ correct: boolean; text: string } | null>(null);
   const [hitFlash, setHitFlash] = useState(false);
   const [kidHitFlash, setKidHitFlash] = useState(false);
+  const [critFlash, setCritFlash] = useState(false);
   const [projectile, setProjectile] = useState<
     { direction: "right" | "left"; emoji: string; key: number } | null
   >(null);
   const [damagePopup, setDamagePopup] = useState<
     { side: "creature" | "kid"; value: string; key: number } | null
   >(null);
+  const [dialogue, setDialogue] = useState<string[]>([
+    `WILD ${level.creatureName.toUpperCase()} APPEARED!`,
+  ]);
   const animKey = useRef(0);
+  const defeatedAnnouncedRef = useRef(false);
+
+  // Battle music (loops while screen is mounted).
+  useEffect(() => {
+    playMusic("/sounds/battle-music.mp3", 0.3);
+    return () => stopMusic();
+  }, []);
+
+  // Dialogue queue: shift one line every DIALOGUE_LINE_MS while non-empty.
+  useEffect(() => {
+    if (dialogue.length === 0) return;
+    const t = setTimeout(() => {
+      setDialogue((d) => d.slice(1));
+    }, DIALOGUE_LINE_MS);
+    return () => clearTimeout(t);
+  }, [dialogue]);
+
+  function pushLines(...lines: string[]) {
+    setDialogue((d) => [...d, ...lines]);
+  }
 
   function handleAnswer(index: number) {
     if (explanation) return;
+    if (dialogue.length > 0) return; // input locked while dialogue showing
     const correct = index === state.currentQuestion.answerIndex;
     setExplanation({ correct, text: state.currentQuestion.explanation });
 
@@ -52,24 +85,66 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
 
     if (correct) {
       const armedPower = allPowers.find((p) => p.id === state.armedPowerId);
-      const damage = state.armedPowerId !== null ? 2 : 1;
+      const isCrit = Math.random() < CRIT_CHANCE;
+      const powered = state.armedPowerId !== null;
+      const damage = isCrit ? (powered ? 3 : 2) : (powered ? 2 : 1);
       const projectileEmoji = armedPower ? armedPower.emoji : "⭐";
+      const superEffective =
+        armedPower !== undefined && isSuperEffective(armedPower.id, level.pokemonType);
+
+      // SFX
+      playSound(powered ? "attack-powered" : "attack-basic", 0.5);
 
       setProjectile({ direction: "right", emoji: projectileEmoji, key });
       setTimeout(() => {
         setHitFlash(true);
         setDamagePopup({ side: "creature", value: `-${damage}`, key });
+        playSound("hit", 0.5);
+        if (isCrit) {
+          setCritFlash(true);
+          setTimeout(() => setCritFlash(false), 320);
+        }
         setTimeout(() => setHitFlash(false), 400);
       }, 600);
 
-      dispatch({ type: "ANSWER_RIGHT" });
+      // Dialogue queue lines
+      const attackLine = armedPower
+        ? `${PLAYER_NAME} USED ${armedPower.name.toUpperCase()}!`
+        : `${PLAYER_NAME} USED \u2B50 TACKLE!`;
+      const lines = [attackLine];
+      if (isCrit) lines.push("\uD83D\uDCA5 CRITICAL HIT!");
+      if (superEffective) lines.push("IT'S SUPER EFFECTIVE!");
+      lines.push(`${level.creatureName.toUpperCase()} LOST ${damage} HP!`);
+
+      // Detect defeat for end-of-queue line
+      if (state.creatureHpRemaining - damage <= 0 && !defeatedAnnouncedRef.current) {
+        defeatedAnnouncedRef.current = true;
+        lines.push(`WILD ${level.creatureName.toUpperCase()} FAINTED!`);
+      }
+
+      pushLines(...lines);
+
+      if (isCrit) {
+        dispatch({ type: "ANSWER_RIGHT_CRIT" });
+      } else {
+        dispatch({ type: "ANSWER_RIGHT" });
+      }
     } else {
+      playSound("wrong", 0.5);
+
       setProjectile({ direction: "left", emoji: "🔥", key });
       setTimeout(() => {
         setKidHitFlash(true);
         setDamagePopup({ side: "kid", value: "-1", key });
+        playSound("hit", 0.4);
         setTimeout(() => setKidHitFlash(false), 400);
       }, 600);
+
+      pushLines(
+        `${PLAYER_NAME}'S ATTACK MISSED!`,
+        `WILD ${level.creatureName.toUpperCase()} STRUCK BACK!`,
+        `${PLAYER_NAME} LOST 1 HEART!`,
+      );
 
       dispatch({ type: "ANSWER_WRONG" });
     }
@@ -79,14 +154,32 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
   useEffect(() => {
     if (state.creatureHpRemaining === 0) {
       const strikes = state.strikes;
+      playSound("victory", 0.6);
       onWin({ stars: starsForStrikes(strikes as 0 | 1 | 2), points: state.pointsEarned });
     } else if (state.strikes === 3) {
+      playSound("defeat", 0.6);
       onLose();
     }
   }, [state.creatureHpRemaining, state.strikes]);
 
+  const showDialogue = dialogue.length > 0;
+  const inputLocked = showDialogue || explanation !== null;
+
   return (
-    <div className="flex flex-col items-stretch gap-3 p-3 max-w-xl mx-auto">
+    <div className="flex flex-col items-stretch gap-3 p-3 max-w-xl mx-auto relative">
+      {/* Crit flash overlay */}
+      {critFlash && (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed inset-0 z-50 animate-crit-flash"
+        />
+      )}
+
+      {/* Top utility row: mute toggle */}
+      <div className="flex justify-start">
+        <MuteToggle />
+      </div>
+
       {/* Battle banner */}
       <div className="relative bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-3 py-2 text-center font-mono">
         <span className="text-sm sm:text-base font-bold tracking-wider text-slate-900 uppercase">
@@ -150,28 +243,35 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
         <StrikeCounter strikes={state.strikes} />
       </div>
 
-      {/* Question / dialog box (replaces FIGHT/BAG/PKMN/RUN menu) */}
-      {explanation ? (
-        <div
-          className={`p-4 border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] font-mono text-base ${
-            explanation.correct ? "bg-emerald-100 text-emerald-900" : "bg-rose-100 text-rose-900"
-          }`}
-        >
-          <div className="font-bold uppercase tracking-wide">
-            {explanation.correct ? "Critical hit!" : "It missed!"}
+      {/* Dialogue ribbon (Pokemon-style) — sits above the question */}
+      {showDialogue && <DialogueRibbon line={dialogue[0]} />}
+
+      {/* Question / explanation. Hidden while dialogue is playing. */}
+      {!showDialogue && (
+        explanation ? (
+          <div
+            className={`p-4 border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] font-mono text-base ${
+              explanation.correct ? "bg-emerald-100 text-emerald-900" : "bg-rose-100 text-rose-900"
+            }`}
+          >
+            <div className="font-bold uppercase tracking-wide">
+              {explanation.correct ? "Nice hit!" : "It missed!"}
+            </div>
+            {explanation.text && <div className="text-sm font-normal mt-1">{explanation.text}</div>}
           </div>
-          {explanation.text && <div className="text-sm font-normal mt-1">{explanation.text}</div>}
-        </div>
-      ) : (
-        <QuestionCard question={state.currentQuestion} onAnswer={handleAnswer} />
+        ) : (
+          <QuestionCard question={state.currentQuestion} onAnswer={handleAnswer} disabled={inputLocked} />
+        )
       )}
 
-      <PowerBar
-        all={allPowers}
-        unlockedIds={unlockedPowers}
-        armedPowerId={state.armedPowerId}
-        onArm={(id) => dispatch({ type: "ARM_POWER", powerId: id })}
-      />
+      {!showDialogue && (
+        <PowerBar
+          all={allPowers}
+          unlockedIds={unlockedPowers}
+          armedPowerId={state.armedPowerId}
+          onArm={(id) => dispatch({ type: "ARM_POWER", powerId: id })}
+        />
+      )}
     </div>
   );
 }
