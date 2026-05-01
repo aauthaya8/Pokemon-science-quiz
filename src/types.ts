@@ -5,6 +5,14 @@ export type Tier = 1 | 2 | 3;
 export type Strikes = 0 | 1 | 2 | 3;
 export type Stars = 1 | 2 | 3;
 export type QuestionType = "mc" | "tf";
+export type PokemonType =
+  | "electric"
+  | "normal"
+  | "grass"
+  | "bug"
+  | "rock"
+  | "psychic"
+  | "fire";
 
 export interface Question {
   id: string;
@@ -26,6 +34,7 @@ export interface Level {
   creatureHp: number;
   difficultyTier: Tier;
   unlocksPower: string | null;
+  pokemonType: PokemonType;
 }
 
 export interface Power {

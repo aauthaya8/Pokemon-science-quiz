@@ -1,4 +1,4 @@
-import { battleReducer, type BattleAction } from "./battleReducer";
+import { battleReducer } from "./battleReducer";
 import type { BattleSession, Question } from "../types";
 
 const Q = (id: string, difficulty: 1 | 2 | 3 = 1): Question => ({
@@ -52,6 +52,31 @@ describe("ANSWER_RIGHT", () => {
     const next = battleReducer(session(), { type: "ANSWER_RIGHT" });
     expect(next.currentQuestion.id).toBe("q2");
     expect(next.questionPool.map(q => q.id)).toEqual(["q3", "q4"]);
+  });
+});
+
+describe("ANSWER_RIGHT_CRIT", () => {
+  test("basic crit: HP -2, double points", () => {
+    const s = session({ currentQuestion: Q("q1", 1) });
+    const next = battleReducer(s, { type: "ANSWER_RIGHT_CRIT" });
+    expect(next.creatureHpRemaining).toBe(1);
+    expect(next.pointsEarned).toBe(20);
+  });
+  test("powered crit: HP -3, quadruple points (powered x2 x crit x2), power consumed", () => {
+    const s = session({ creatureHpRemaining: 5, armedPowerId: "vineWhip", currentQuestion: Q("q1", 1) });
+    const next = battleReducer(s, { type: "ANSWER_RIGHT_CRIT" });
+    expect(next.creatureHpRemaining).toBe(2);
+    expect(next.pointsEarned).toBe(40);
+    expect(next.armedPowerId).toBeNull();
+  });
+  test("crit HP cannot go below 0", () => {
+    const s = session({ creatureHpRemaining: 1, armedPowerId: "vineWhip" });
+    const next = battleReducer(s, { type: "ANSWER_RIGHT_CRIT" });
+    expect(next.creatureHpRemaining).toBe(0);
+  });
+  test("crit advances currentQuestion", () => {
+    const next = battleReducer(session(), { type: "ANSWER_RIGHT_CRIT" });
+    expect(next.currentQuestion.id).toBe("q2");
   });
 });
 
