@@ -57,7 +57,7 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
 
   // Battle music (loops while screen is mounted).
   useEffect(() => {
-    playMusic("/sounds/battle-music.mp3", 0.3);
+    playMusic("/sounds/mission-impossible.mp3", 0.3);
     return () => stopMusic();
   }, []);
 

@@ -7,7 +7,7 @@ Drop public-domain / CC0 MP3 files here with these exact names:
   victory.mp3           short fanfare / level-clear jingle
   defeat.mp3            sad descending tone / game over
   level-unlock.mp3      sparkle / chime
-  battle-music.mp3      30-60s loopable chiptune BGM
+  mission-impossible.mp3  Mission Impossible theme — drop your own MP3 here (personal use only)
 
 Suggested free sources (all CC0 / public domain):
 
@@ -16,7 +16,7 @@ Suggested free sources (all CC0 / public domain):
   pixabay.com search "8-bit fanfare"  -> victory, level-unlock
   pixabay.com search "buzzer"         -> wrong
   pixabay.com search "game over"      -> defeat
-  pixabay.com search "chiptune battle"-> battle-music
+  Mission Impossible theme            -> any source (personal use only — not for distribution)
   freesound.org search "8bit fanfare" -> alt source
 
 The app gracefully ignores missing files (audio.play() rejection is swallowed),
