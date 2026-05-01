@@ -33,3 +33,9 @@ test("Pokémon IDs are unique per level", () => {
   const ids = data.map(l => l.creaturePokemonId);
   expect(new Set(ids).size).toBe(ids.length);
 });
+test("every level has a valid pokemonType", () => {
+  const valid = new Set(["electric", "normal", "grass", "bug", "rock", "psychic", "fire"]);
+  data.forEach(l => {
+    expect(valid.has(l.pokemonType)).toBe(true);
+  });
+});
