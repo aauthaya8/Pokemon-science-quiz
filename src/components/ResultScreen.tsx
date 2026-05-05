@@ -2,13 +2,14 @@ interface Props {
   outcome: "win" | "lose";
   stars?: 1 | 2 | 3;
   points?: number;
+  leveledUpTo?: { level: number; title: string };
   hasNextLevel: boolean;
   onNext: () => void;
   onReplay: () => void;
   onHome: () => void;
 }
 
-export function ResultScreen({ outcome, stars, points, hasNextLevel, onNext, onReplay, onHome }: Props) {
+export function ResultScreen({ outcome, stars, points, leveledUpTo, hasNextLevel, onNext, onReplay, onHome }: Props) {
   return (
     <div className="min-h-full flex flex-col items-center justify-center gap-4 p-6 bg-gradient-to-b from-sky-400 via-sky-200 to-amber-200">
       <div className="bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-6 py-5 max-w-md w-full font-mono text-center">
@@ -28,6 +29,12 @@ export function ResultScreen({ outcome, stars, points, hasNextLevel, onNext, onR
             <div className="text-base text-slate-900 mt-2">
               <span className="font-bold">+{points}</span> pts earned
             </div>
+            {leveledUpTo && (
+              <div className="mt-3 bg-yellow-100 border-[3px] border-slate-900 rounded-md px-3 py-2 text-slate-900 font-bold uppercase tracking-wide animate-power-pop">
+                <span aria-hidden="true">{"\uD83D\uDCC8"}</span>{" "}
+                LEVEL UP! Now Lv {leveledUpTo.level} {leveledUpTo.title}!
+              </div>
+            )}
           </>
         ) : (
           <>

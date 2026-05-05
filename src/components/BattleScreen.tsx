@@ -19,6 +19,9 @@ interface Props {
   questions: Question[];
   unlockedPowers: string[];
   allPowers: Power[];
+  playerName?: string;
+  starterPokemonId?: number;
+  trainerLevel?: number;
   onWin: (result: { stars: 1 | 2 | 3; points: number }) => void;
   onLose: () => void;
   onRun?: () => void;
@@ -26,9 +29,24 @@ interface Props {
 
 const DIALOGUE_LINE_MS = 1400;
 const CRIT_CHANCE = 0.125;
-const PLAYER_NAME = "AVI";
+const DEFAULT_PLAYER_NAME = "AVI";
 
-export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWin, onLose, onRun }: Props) {
+export function BattleScreen({
+  level,
+  questions,
+  unlockedPowers,
+  allPowers,
+  playerName,
+  starterPokemonId,
+  trainerLevel,
+  onWin,
+  onLose,
+  onRun,
+}: Props) {
+  const PLAYER_NAME = (playerName ?? DEFAULT_PLAYER_NAME).toUpperCase();
+  const playerLabel = trainerLevel !== undefined
+    ? `${PLAYER_NAME} Lv.${trainerLevel}`
+    : PLAYER_NAME;
   const [first, ...rest] = questions;
   const [state, dispatch] = useReducer(battleReducer, {
     levelId: level.id,
@@ -222,7 +240,12 @@ export function BattleScreen({ level, questions, unlockedPowers, allPowers, onWi
         {/* Player: bottom-left */}
         <div className="relative z-10 flex justify-start pl-4 pb-4 -mt-4">
           <div className="relative">
-            <PlayerAvatar armed={state.armedPowerId !== null} hitFlash={kidHitFlash} />
+            <PlayerAvatar
+              starterPokemonId={starterPokemonId}
+              label={playerLabel}
+              armed={state.armedPowerId !== null}
+              hitFlash={kidHitFlash}
+            />
             {damagePopup && damagePopup.side === "kid" && (
               <DamagePopup key={damagePopup.key} value={damagePopup.value} side="kid" />
             )}

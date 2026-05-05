@@ -10,6 +10,7 @@ import { LevelSelect } from "./components/LevelSelect";
 import { BattleScreen } from "./components/BattleScreen";
 import { ResultScreen } from "./components/ResultScreen";
 import { PowerUnlockCinematic } from "./components/PowerUnlockCinematic";
+import { levelForPoints } from "./logic/playerLevel";
 
 const LEVELS = levelsData as Level[];
 const POWERS = powersData as Power[];
@@ -19,8 +20,22 @@ type Screen =
   | { name: "title" }
   | { name: "map" }
   | { name: "battle"; levelId: number; questionPool: Question[] }
-  | { name: "result"; outcome: "win" | "lose"; levelId: number; stars?: Stars; points?: number }
-  | { name: "unlock"; power: Power; nextLevelId: number; stars: Stars; points: number };
+  | {
+      name: "result";
+      outcome: "win" | "lose";
+      levelId: number;
+      stars?: Stars;
+      points?: number;
+      leveledUpTo?: { level: number; title: string };
+    }
+  | {
+      name: "unlock";
+      power: Power;
+      nextLevelId: number;
+      stars: Stars;
+      points: number;
+      leveledUpTo?: { level: number; title: string };
+    };
 
 export default function App() {
   const { profile, setProfile } = useProfile();
@@ -48,9 +63,14 @@ export default function App() {
   function handleWin({ stars, points }: { stars: Stars; points: number }) {
     if (!profile || screen.name !== "battle") return;
     const level = LEVELS.find((l) => l.id === screen.levelId)!;
+    const newTotal = profile.totalPoints + points;
+    const beforeLv = levelForPoints(profile.totalPoints).level;
+    const after = levelForPoints(newTotal);
+    const leveledUpTo =
+      after.level > beforeLv ? { level: after.level, title: after.title } : undefined;
     const updated: Profile = {
       ...profile,
-      totalPoints: profile.totalPoints + points,
+      totalPoints: newTotal,
       levelResults: {
         ...profile.levelResults,
         [level.id]: {
@@ -72,9 +92,9 @@ export default function App() {
         : undefined;
 
     if (newPower) {
-      setScreen({ name: "unlock", power: newPower, nextLevelId: level.id, stars, points });
+      setScreen({ name: "unlock", power: newPower, nextLevelId: level.id, stars, points, leveledUpTo });
     } else {
-      setScreen({ name: "result", outcome: "win", levelId: level.id, stars, points });
+      setScreen({ name: "result", outcome: "win", levelId: level.id, stars, points, leveledUpTo });
     }
   }
 
@@ -123,12 +143,16 @@ export default function App() {
 
   if (screen.name === "battle") {
     const level = LEVELS.find((l) => l.id === screen.levelId)!;
+    const trainerLevel = levelForPoints(profile.totalPoints).level;
     return (
       <BattleScreen
         level={level}
         questions={screen.questionPool}
         unlockedPowers={profile.unlockedPowers}
         allPowers={POWERS}
+        playerName={profile.playerName}
+        starterPokemonId={profile.starterPokemonId}
+        trainerLevel={trainerLevel}
         onWin={handleWin}
         onLose={handleLose}
         onRun={() => setScreen({ name: "map" })}
@@ -147,6 +171,7 @@ export default function App() {
             levelId: screen.nextLevelId,
             stars: screen.stars,
             points: screen.points,
+            leveledUpTo: screen.leveledUpTo,
           })
         }
       />
@@ -160,6 +185,7 @@ export default function App() {
         outcome={screen.outcome}
         stars={screen.stars}
         points={screen.points}
+        leveledUpTo={screen.leveledUpTo}
         hasNextLevel={hasNext}
         onNext={() => handleSelectLevel(screen.levelId + 1)}
         onReplay={() => handleSelectLevel(screen.levelId)}
