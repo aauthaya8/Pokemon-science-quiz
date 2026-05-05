@@ -82,3 +82,9 @@ html, body, #root {
   25%, 75%      { opacity: 0; }
 }
 .animate-typewriter-cursor { animation: typewriter-cursor 0.7s ease-in-out infinite; }
+
+@keyframes trainer-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-3px); }
+}
+.animate-trainer-bob { animation: trainer-bob 1.2s ease-in-out infinite; }
