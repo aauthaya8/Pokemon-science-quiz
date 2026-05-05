@@ -2,13 +2,17 @@ import type { Grade, Profile } from "../types";
 
 export const PROFILE_KEY = "kidsScienceBattle.profile.v1";
 
-export function defaultProfile(name: string, grade: Grade): Profile {
+/** Default starter Pokémon Dex ID for legacy saves missing the field (Pikachu). */
+export const DEFAULT_STARTER_POKEMON_ID = 25;
+
+export function defaultProfile(name: string, grade: Grade, starterPokemonId: number = DEFAULT_STARTER_POKEMON_ID): Profile {
   return {
     playerName: name,
     gradeLevel: grade,
     totalPoints: 0,
     unlockedPowers: [],
     levelResults: {},
+    starterPokemonId,
   };
 }
 
@@ -16,7 +20,16 @@ export function loadProfile(storage: Storage): Profile | null {
   try {
     const raw = storage.getItem(PROFILE_KEY);
     if (!raw) return null;
-    return JSON.parse(raw) as Profile;
+    const parsed = JSON.parse(raw) as Partial<Profile>;
+    // Backward compat: older saves have no starterPokemonId — default to Pikachu.
+    return {
+      playerName: parsed.playerName ?? "",
+      gradeLevel: (parsed.gradeLevel ?? 3) as Grade,
+      totalPoints: parsed.totalPoints ?? 0,
+      unlockedPowers: parsed.unlockedPowers ?? [],
+      levelResults: parsed.levelResults ?? {},
+      starterPokemonId: parsed.starterPokemonId ?? DEFAULT_STARTER_POKEMON_ID,
+    };
   } catch {
     return null;
   }

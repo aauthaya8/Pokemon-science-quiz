@@ -57,6 +57,8 @@ export interface Profile {
   totalPoints: number;
   unlockedPowers: string[];
   levelResults: Record<number, LevelResult>;
+  /** PokéAPI Dex ID for the kid's chosen starter avatar. Defaults to 25 (Pikachu) for legacy saves. */
+  starterPokemonId: number;
 }
 
 export interface BattleSession {

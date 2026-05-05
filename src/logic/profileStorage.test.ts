@@ -1,4 +1,4 @@
-import { defaultProfile, loadProfile, saveProfile, PROFILE_KEY } from "./profileStorage";
+import { defaultProfile, loadProfile, saveProfile, PROFILE_KEY, DEFAULT_STARTER_POKEMON_ID } from "./profileStorage";
 
 const stubStorage = (): Storage & { __data: Record<string, string> } => {
   const data: Record<string, string> = {};
@@ -21,6 +21,12 @@ describe("defaultProfile", () => {
     expect(p.totalPoints).toBe(0);
     expect(p.unlockedPowers).toEqual([]);
     expect(p.levelResults).toEqual({});
+    expect(p.starterPokemonId).toBe(DEFAULT_STARTER_POKEMON_ID);
+  });
+
+  test("accepts a starter Pokémon dex id", () => {
+    const p = defaultProfile("Avi", 4, 133);
+    expect(p.starterPokemonId).toBe(133);
   });
 });
 
@@ -42,6 +48,25 @@ describe("loadProfile / saveProfile", () => {
     const s = stubStorage();
     s.setItem(PROFILE_KEY, "{not valid");
     expect(loadProfile(s)).toBeNull();
+  });
+
+  test("legacy save without starterPokemonId defaults to Pikachu (25)", () => {
+    const s = stubStorage();
+    s.setItem(
+      PROFILE_KEY,
+      JSON.stringify({
+        playerName: "Avi",
+        gradeLevel: 3,
+        totalPoints: 100,
+        unlockedPowers: [],
+        levelResults: {},
+      }),
+    );
+    const loaded = loadProfile(s);
+    expect(loaded).not.toBeNull();
+    expect(loaded!.starterPokemonId).toBe(DEFAULT_STARTER_POKEMON_ID);
+    expect(loaded!.playerName).toBe("Avi");
+    expect(loaded!.totalPoints).toBe(100);
   });
 
   test("save swallows storage errors", () => {
