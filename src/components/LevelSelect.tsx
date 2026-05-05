@@ -1,8 +1,10 @@
 import { useState } from "react";
 import type { Grade, Level, Profile } from "../types";
 import { isLevelUnlocked, nextPlayableLevel } from "../logic/levelUnlock";
+import { levelForPoints } from "../logic/playerLevel";
 import { SettingsPanel } from "./SettingsPanel";
 import { MuteToggle } from "./MuteToggle";
+import { AchievementsPanel } from "./AchievementsPanel";
 
 interface Props {
   levels: Level[];
@@ -13,24 +15,38 @@ interface Props {
 
 export function LevelSelect({ levels, profile, onSelect, onChangeGrade }: Props) {
   const [showSettings, setShowSettings] = useState(false);
+  const [showAchievements, setShowAchievements] = useState(false);
   const next = nextPlayableLevel(profile, levels.length);
+  const { level: trainerLevel, title } = levelForPoints(profile.totalPoints);
 
   return (
     <div className="p-4 sm:p-6 relative min-h-full bg-gradient-to-b from-sky-300 via-sky-100 to-amber-100">
       <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
         <MuteToggle />
       </div>
-      <button
-        aria-label="Settings"
-        className="absolute top-3 right-3 sm:top-4 sm:right-4 text-2xl bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] w-11 h-11 flex items-center justify-center"
-        onClick={() => setShowSettings((v) => !v)}
-      >
-        <span aria-hidden="true">{"\u2699"}</span>
-      </button>
+      <div className="absolute top-3 right-3 sm:top-4 sm:right-4 flex gap-2">
+        <button
+          aria-label="Achievements"
+          className="text-2xl bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] w-11 h-11 flex items-center justify-center"
+          onClick={() => setShowAchievements((v) => !v)}
+        >
+          <span aria-hidden="true">{"\uD83C\uDFC6"}</span>
+        </button>
+        <button
+          aria-label="Settings"
+          className="text-2xl bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] w-11 h-11 flex items-center justify-center"
+          onClick={() => setShowSettings((v) => !v)}
+        >
+          <span aria-hidden="true">{"\u2699"}</span>
+        </button>
+      </div>
       {showSettings && (
         <div className="absolute top-16 right-3 sm:right-4 z-10">
           <SettingsPanel currentGrade={profile.gradeLevel} onChange={onChangeGrade} />
         </div>
+      )}
+      {showAchievements && (
+        <AchievementsPanel profile={profile} onClose={() => setShowAchievements(false)} />
       )}
 
       <div className="max-w-3xl mx-auto bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-4 py-3 mb-5 mt-2">
@@ -38,6 +54,9 @@ export function LevelSelect({ levels, profile, onSelect, onChangeGrade }: Props)
           <div>
             <div className="text-xs uppercase tracking-widest text-slate-600">Trainer</div>
             <div className="text-xl sm:text-2xl font-bold uppercase">{profile.playerName}</div>
+            <div className="text-xs sm:text-sm text-slate-700 font-bold uppercase tracking-wide mt-0.5">
+              Lv {trainerLevel} {title}
+            </div>
           </div>
           <div className="text-right">
             <div className="text-xs uppercase tracking-widest text-slate-600">Score</div>
