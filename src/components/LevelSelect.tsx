@@ -6,12 +6,14 @@ import { regionForTopic } from "../data/regions";
 import { SettingsPanel } from "./SettingsPanel";
 import { MuteToggle } from "./MuteToggle";
 import { AchievementsPanel } from "./AchievementsPanel";
+import { ShopPanel } from "./ShopPanel";
 
 interface Props {
   levels: Level[];
   profile: Profile;
   onSelect: (levelId: number) => void;
   onChangeGrade: (g: Grade) => void;
+  onProfileChange?: (next: Profile) => void;
 }
 
 /**
@@ -78,9 +80,10 @@ const CONNECTORS: Connector[] = [
   { key: "v-c1-r4", col: 1, row: 4, kind: "v" },
 ];
 
-export function LevelSelect({ levels, profile, onSelect, onChangeGrade }: Props) {
+export function LevelSelect({ levels, profile, onSelect, onChangeGrade, onProfileChange }: Props) {
   const [showSettings, setShowSettings] = useState(false);
   const [showAchievements, setShowAchievements] = useState(false);
+  const [showShop, setShowShop] = useState(false);
   const next = nextPlayableLevel(profile, levels.length);
   const { level: trainerLevel, title } = levelForPoints(profile.totalPoints);
 
@@ -101,6 +104,15 @@ export function LevelSelect({ levels, profile, onSelect, onChangeGrade }: Props)
         >
           <span aria-hidden="true">{"\uD83C\uDFC6"}</span>
         </button>
+        {onProfileChange && (
+          <button
+            aria-label="Shop"
+            className="text-2xl bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] w-11 h-11 flex items-center justify-center"
+            onClick={() => setShowShop((v) => !v)}
+          >
+            <span aria-hidden="true">{"\uD83D\uDED2"}</span>
+          </button>
+        )}
         <button
           aria-label="Settings"
           className="text-2xl bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] w-11 h-11 flex items-center justify-center"
@@ -116,6 +128,13 @@ export function LevelSelect({ levels, profile, onSelect, onChangeGrade }: Props)
       )}
       {showAchievements && (
         <AchievementsPanel profile={profile} onClose={() => setShowAchievements(false)} />
+      )}
+      {showShop && onProfileChange && (
+        <ShopPanel
+          profile={profile}
+          onChange={onProfileChange}
+          onClose={() => setShowShop(false)}
+        />
       )}
 
       <div className="max-w-3xl mx-auto bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-4 py-3 mb-5 mt-2">
