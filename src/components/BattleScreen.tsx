@@ -14,6 +14,15 @@ import { DamagePopup } from "./DamagePopup";
 import { DialogueRibbon } from "./DialogueRibbon";
 import { MuteToggle } from "./MuteToggle";
 
+export interface ConsumableEffects {
+  /** Heart Potion: gives an extra heart for this battle (4 instead of 3). */
+  extraHeart: boolean;
+  /** Lucky Charm: multiplier on crit chance. Default 1, charm makes 3. */
+  critMultiplier: number;
+  /** Energy Tonic: a power id to pre-arm at battle start. */
+  preArmedPower: string | null;
+}
+
 interface Props {
   level: Level;
   questions: Question[];
@@ -22,6 +31,8 @@ interface Props {
   playerName?: string;
   starterPokemonId?: number;
   trainerLevel?: number;
+  cosmetics?: string[];
+  consumableEffects?: ConsumableEffects;
   onWin: (result: { stars: 1 | 2 | 3; points: number }) => void;
   onLose: () => void;
   onRun?: () => void;
@@ -31,6 +42,12 @@ const DIALOGUE_LINE_MS = 1400;
 const CRIT_CHANCE = 0.125;
 const DEFAULT_PLAYER_NAME = "AVI";
 
+const NO_EFFECTS: ConsumableEffects = {
+  extraHeart: false,
+  critMultiplier: 1,
+  preArmedPower: null,
+};
+
 export function BattleScreen({
   level,
   questions,
@@ -39,6 +56,8 @@ export function BattleScreen({
   playerName,
   starterPokemonId,
   trainerLevel,
+  cosmetics,
+  consumableEffects = NO_EFFECTS,
   onWin,
   onLose,
   onRun,
@@ -55,8 +74,10 @@ export function BattleScreen({
     pointsEarned: 0,
     currentQuestion: first,
     questionPool: rest,
-    armedPowerId: null,
+    armedPowerId: consumableEffects.preArmedPower,
   });
+  const maxHearts = consumableEffects.extraHeart ? 4 : 3;
+  const loseAtStrikes = maxHearts; // 3 by default, 4 with Heart Potion
   const [explanation, setExplanation] = useState<{ correct: boolean; text: string } | null>(null);
   const [hitFlash, setHitFlash] = useState(false);
   const [kidHitFlash, setKidHitFlash] = useState(false);
@@ -103,7 +124,8 @@ export function BattleScreen({
 
     if (correct) {
       const armedPower = allPowers.find((p) => p.id === state.armedPowerId);
-      const isCrit = Math.random() < CRIT_CHANCE;
+      const critChance = Math.min(1, CRIT_CHANCE * consumableEffects.critMultiplier);
+      const isCrit = Math.random() < critChance;
       const powered = state.armedPowerId !== null;
       const damage = isCrit ? (powered ? 3 : 2) : (powered ? 2 : 1);
       const projectileEmoji = armedPower ? armedPower.emoji : "⭐";
@@ -171,10 +193,14 @@ export function BattleScreen({
 
   useEffect(() => {
     if (state.creatureHpRemaining === 0) {
-      const strikes = state.strikes;
+      // Heart Potion forgives the first wrong answer when computing star rating —
+      // i.e., star count is based on "extra" strikes beyond the bonus heart.
+      const adjustedStrikes = consumableEffects.extraHeart
+        ? Math.max(0, state.strikes - 1)
+        : state.strikes;
       playSound("victory", 0.6);
-      onWin({ stars: starsForStrikes(strikes as 0 | 1 | 2), points: state.pointsEarned });
-    } else if (state.strikes === 3) {
+      onWin({ stars: starsForStrikes(Math.min(2, adjustedStrikes) as 0 | 1 | 2), points: state.pointsEarned });
+    } else if (state.strikes >= loseAtStrikes) {
       playSound("defeat", 0.6);
       onLose();
     }
@@ -245,6 +271,7 @@ export function BattleScreen({
               label={playerLabel}
               armed={state.armedPowerId !== null}
               hitFlash={kidHitFlash}
+              cosmetics={cosmetics}
             />
             {damagePopup && damagePopup.side === "kid" && (
               <DamagePopup key={damagePopup.key} value={damagePopup.value} side="kid" />
@@ -263,7 +290,7 @@ export function BattleScreen({
 
       {/* Strikes / Lives */}
       <div className="flex justify-end">
-        <StrikeCounter strikes={state.strikes} />
+        <StrikeCounter strikes={state.strikes} maxHearts={maxHearts} />
       </div>
 
       {/* Dialogue ribbon (Pokemon-style) — sits above the question */}

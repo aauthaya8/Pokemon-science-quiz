@@ -1,7 +1,13 @@
 import type { Strikes } from "../types";
 
-export function StrikeCounter({ strikes }: { strikes: Strikes }) {
-  const remaining = 3 - strikes;
+interface Props {
+  strikes: Strikes;
+  /** Total hearts to render. Default 3. Heart Potion bumps this to 4. */
+  maxHearts?: number;
+}
+
+export function StrikeCounter({ strikes, maxHearts = 3 }: Props) {
+  const remaining = Math.max(0, maxHearts - strikes);
   return (
     <div className="bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-3 py-1.5 font-mono">
       <div className="flex items-center gap-2">
@@ -9,7 +15,7 @@ export function StrikeCounter({ strikes }: { strikes: Strikes }) {
           Lives
         </span>
         <div className="flex gap-1">
-          {[0, 1, 2].map((i) => {
+          {Array.from({ length: maxHearts }, (_, i) => {
             const broken = i < strikes;
             return (
               <span
@@ -22,7 +28,7 @@ export function StrikeCounter({ strikes }: { strikes: Strikes }) {
             );
           })}
         </div>
-        <span className="text-[10px] font-bold text-slate-700">{remaining}/3</span>
+        <span className="text-[10px] font-bold text-slate-700">{remaining}/{maxHearts}</span>
       </div>
     </div>
   );

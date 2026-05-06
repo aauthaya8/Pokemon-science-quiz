@@ -7,10 +7,11 @@ import { useProfile } from "./hooks/useProfile";
 import { selectQuestions } from "./logic/questionSelection";
 import { TitleScreen } from "./components/TitleScreen";
 import { LevelSelect } from "./components/LevelSelect";
-import { BattleScreen } from "./components/BattleScreen";
+import { BattleScreen, type ConsumableEffects } from "./components/BattleScreen";
 import { ResultScreen } from "./components/ResultScreen";
 import { PowerUnlockCinematic } from "./components/PowerUnlockCinematic";
 import { levelForPoints } from "./logic/playerLevel";
+import { consumeItem } from "./logic/shop";
 
 const LEVELS = levelsData as Level[];
 const POWERS = powersData as Power[];
@@ -19,7 +20,7 @@ const QUESTIONS = questionsData as Question[];
 type Screen =
   | { name: "title" }
   | { name: "map" }
-  | { name: "battle"; levelId: number; questionPool: Question[] }
+  | { name: "battle"; levelId: number; questionPool: Question[]; consumableEffects: ConsumableEffects }
   | {
       name: "result";
       outcome: "win" | "lose";
@@ -36,6 +37,12 @@ type Screen =
       points: number;
       leveledUpTo?: { level: number; title: string };
     };
+
+const NO_EFFECTS: ConsumableEffects = {
+  extraHeart: false,
+  critMultiplier: 1,
+  preArmedPower: null,
+};
 
 export default function App() {
   const { profile, setProfile } = useProfile();
@@ -57,7 +64,31 @@ export default function App() {
       difficulty: level.difficultyTier,
       count: level.creatureHp + 5,
     });
-    setScreen({ name: "battle", levelId: id, questionPool: pool });
+
+    // Apply any owned consumables — consume one charge of each at battle start.
+    let working = profile;
+    const effects: ConsumableEffects = { ...NO_EFFECTS };
+
+    const afterHeart = consumeItem(working, "heartPotion");
+    if (afterHeart) {
+      working = afterHeart;
+      effects.extraHeart = true;
+    }
+    const afterLuck = consumeItem(working, "luckyCharm");
+    if (afterLuck) {
+      working = afterLuck;
+      effects.critMultiplier = 3;
+    }
+    const afterTonic = consumeItem(working, "energyTonic");
+    if (afterTonic && profile.unlockedPowers.length > 0) {
+      working = afterTonic;
+      effects.preArmedPower =
+        profile.unlockedPowers[Math.floor(Math.random() * profile.unlockedPowers.length)];
+    }
+
+    if (working !== profile) setProfile(working);
+
+    setScreen({ name: "battle", levelId: id, questionPool: pool, consumableEffects: effects });
   }
 
   function handleWin({ stars, points }: { stars: Stars; points: number }) {
@@ -137,6 +168,7 @@ export default function App() {
         profile={profile}
         onSelect={handleSelectLevel}
         onChangeGrade={handleChangeGrade}
+        onProfileChange={setProfile}
       />
     );
   }
@@ -153,6 +185,8 @@ export default function App() {
         playerName={profile.playerName}
         starterPokemonId={profile.starterPokemonId}
         trainerLevel={trainerLevel}
+        cosmetics={profile.equippedCosmetics}
+        consumableEffects={screen.consumableEffects}
         onWin={handleWin}
         onLose={handleLose}
         onRun={() => setScreen({ name: "map" })}
