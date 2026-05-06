@@ -8,6 +8,8 @@ const emptyProfile = (): Profile => ({
   unlockedPowers: [],
   levelResults: {},
   starterPokemonId: 25,
+  inventory: {},
+  equippedCosmetics: [],
 });
 
 const completedThrough = (n: number): Profile => {

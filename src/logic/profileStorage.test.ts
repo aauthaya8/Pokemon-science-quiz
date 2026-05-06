@@ -22,6 +22,8 @@ describe("defaultProfile", () => {
     expect(p.unlockedPowers).toEqual([]);
     expect(p.levelResults).toEqual({});
     expect(p.starterPokemonId).toBe(DEFAULT_STARTER_POKEMON_ID);
+    expect(p.inventory).toEqual({});
+    expect(p.equippedCosmetics).toEqual([]);
   });
 
   test("accepts a starter Pokémon dex id", () => {
@@ -67,6 +69,25 @@ describe("loadProfile / saveProfile", () => {
     expect(loaded!.starterPokemonId).toBe(DEFAULT_STARTER_POKEMON_ID);
     expect(loaded!.playerName).toBe("Avi");
     expect(loaded!.totalPoints).toBe(100);
+  });
+
+  test("legacy save without inventory/equippedCosmetics defaults to empty", () => {
+    const s = stubStorage();
+    s.setItem(
+      PROFILE_KEY,
+      JSON.stringify({
+        playerName: "Avi",
+        gradeLevel: 3,
+        totalPoints: 100,
+        unlockedPowers: [],
+        levelResults: {},
+        starterPokemonId: 25,
+      }),
+    );
+    const loaded = loadProfile(s);
+    expect(loaded).not.toBeNull();
+    expect(loaded!.inventory).toEqual({});
+    expect(loaded!.equippedCosmetics).toEqual([]);
   });
 
   test("save swallows storage errors", () => {

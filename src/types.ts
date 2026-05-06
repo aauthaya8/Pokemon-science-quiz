@@ -59,6 +59,10 @@ export interface Profile {
   levelResults: Record<number, LevelResult>;
   /** PokéAPI Dex ID for the kid's chosen starter avatar. Defaults to 25 (Pikachu) for legacy saves. */
   starterPokemonId: number;
+  /** Item id → count owned. Consumables: count > 0; cosmetics: 0 or 1. */
+  inventory: Record<string, number>;
+  /** Cosmetic item ids currently visible on the avatar. */
+  equippedCosmetics: string[];
 }
 
 export interface BattleSession {

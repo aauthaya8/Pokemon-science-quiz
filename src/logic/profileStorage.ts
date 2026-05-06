@@ -13,6 +13,8 @@ export function defaultProfile(name: string, grade: Grade, starterPokemonId: num
     unlockedPowers: [],
     levelResults: {},
     starterPokemonId,
+    inventory: {},
+    equippedCosmetics: [],
   };
 }
 
@@ -21,7 +23,7 @@ export function loadProfile(storage: Storage): Profile | null {
     const raw = storage.getItem(PROFILE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as Partial<Profile>;
-    // Backward compat: older saves have no starterPokemonId — default to Pikachu.
+    // Backward compat: older saves have no starterPokemonId / inventory / equippedCosmetics.
     return {
       playerName: parsed.playerName ?? "",
       gradeLevel: (parsed.gradeLevel ?? 3) as Grade,
@@ -29,6 +31,8 @@ export function loadProfile(storage: Storage): Profile | null {
       unlockedPowers: parsed.unlockedPowers ?? [],
       levelResults: parsed.levelResults ?? {},
       starterPokemonId: parsed.starterPokemonId ?? DEFAULT_STARTER_POKEMON_ID,
+      inventory: parsed.inventory ?? {},
+      equippedCosmetics: parsed.equippedCosmetics ?? [],
     };
   } catch {
     return null;
