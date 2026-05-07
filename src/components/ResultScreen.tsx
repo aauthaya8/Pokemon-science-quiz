@@ -3,13 +3,24 @@ interface Props {
   stars?: 1 | 2 | 3;
   points?: number;
   leveledUpTo?: { level: number; title: string };
+  evolution?: { name: string; pokemonId: number } | null;
   hasNextLevel: boolean;
   onNext: () => void;
   onReplay: () => void;
   onHome: () => void;
 }
 
-export function ResultScreen({ outcome, stars, points, leveledUpTo, hasNextLevel, onNext, onReplay, onHome }: Props) {
+export function ResultScreen({
+  outcome,
+  stars,
+  points,
+  leveledUpTo,
+  evolution,
+  hasNextLevel,
+  onNext,
+  onReplay,
+  onHome,
+}: Props) {
   return (
     <div className="min-h-full flex flex-col items-center justify-center gap-4 p-6 bg-gradient-to-b from-sky-400 via-sky-200 to-amber-200">
       <div className="bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-6 py-5 max-w-md w-full font-mono text-center">
@@ -33,6 +44,25 @@ export function ResultScreen({ outcome, stars, points, leveledUpTo, hasNextLevel
               <div className="mt-3 bg-yellow-100 border-[3px] border-slate-900 rounded-md px-3 py-2 text-slate-900 font-bold uppercase tracking-wide animate-power-pop">
                 <span aria-hidden="true">{"\uD83D\uDCC8"}</span>{" "}
                 LEVEL UP! Now Lv {leveledUpTo.level} {leveledUpTo.title}!
+              </div>
+            )}
+            {evolution && (
+              <div
+                data-testid="evolution-announcement"
+                className="mt-3 bg-fuchsia-100 border-[3px] border-slate-900 rounded-md px-3 py-3 text-slate-900 font-bold uppercase tracking-wide animate-power-pop flex flex-col items-center gap-2"
+              >
+                <img
+                  src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${evolution.pokemonId}.png`}
+                  alt={evolution.name}
+                  loading="lazy"
+                  draggable={false}
+                  className="w-20 h-20 object-contain drop-shadow-md animate-creature-bounce"
+                />
+                <div className="text-base">
+                  <span aria-hidden="true">{"\u2728"}</span>{" "}
+                  EVOLVED INTO {evolution.name.toUpperCase()}!{" "}
+                  <span aria-hidden="true">{"\u2728"}</span>
+                </div>
               </div>
             )}
           </>

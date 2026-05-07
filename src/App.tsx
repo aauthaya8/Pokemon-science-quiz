@@ -11,6 +11,7 @@ import { BattleScreen, type ConsumableEffects } from "./components/BattleScreen"
 import { ResultScreen } from "./components/ResultScreen";
 import { PowerUnlockCinematic } from "./components/PowerUnlockCinematic";
 import { levelForPoints } from "./logic/playerLevel";
+import { didEvolve } from "./logic/evolution";
 import { consumeItem } from "./logic/shop";
 
 const LEVELS = levelsData as Level[];
@@ -28,6 +29,7 @@ type Screen =
       stars?: Stars;
       points?: number;
       leveledUpTo?: { level: number; title: string };
+      evolution?: { pokemonId: number; name: string } | null;
     }
   | {
       name: "unlock";
@@ -36,6 +38,7 @@ type Screen =
       stars: Stars;
       points: number;
       leveledUpTo?: { level: number; title: string };
+      evolution?: { pokemonId: number; name: string } | null;
     };
 
 const NO_EFFECTS: ConsumableEffects = {
@@ -99,6 +102,7 @@ export default function App() {
     const after = levelForPoints(newTotal);
     const leveledUpTo =
       after.level > beforeLv ? { level: after.level, title: after.title } : undefined;
+    const evolution = didEvolve(profile.starterPokemonId, beforeLv, after.level);
     const updated: Profile = {
       ...profile,
       totalPoints: newTotal,
@@ -123,9 +127,25 @@ export default function App() {
         : undefined;
 
     if (newPower) {
-      setScreen({ name: "unlock", power: newPower, nextLevelId: level.id, stars, points, leveledUpTo });
+      setScreen({
+        name: "unlock",
+        power: newPower,
+        nextLevelId: level.id,
+        stars,
+        points,
+        leveledUpTo,
+        evolution,
+      });
     } else {
-      setScreen({ name: "result", outcome: "win", levelId: level.id, stars, points, leveledUpTo });
+      setScreen({
+        name: "result",
+        outcome: "win",
+        levelId: level.id,
+        stars,
+        points,
+        leveledUpTo,
+        evolution,
+      });
     }
   }
 
@@ -206,6 +226,7 @@ export default function App() {
             stars: screen.stars,
             points: screen.points,
             leveledUpTo: screen.leveledUpTo,
+            evolution: screen.evolution,
           })
         }
       />
@@ -220,6 +241,7 @@ export default function App() {
         stars={screen.stars}
         points={screen.points}
         leveledUpTo={screen.leveledUpTo}
+        evolution={screen.evolution ?? null}
         hasNextLevel={hasNext}
         onNext={() => handleSelectLevel(screen.levelId + 1)}
         onReplay={() => handleSelectLevel(screen.levelId)}
