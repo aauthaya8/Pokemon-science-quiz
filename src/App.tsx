@@ -10,8 +10,9 @@ import { LevelSelect } from "./components/LevelSelect";
 import { BattleScreen, type ConsumableEffects } from "./components/BattleScreen";
 import { ResultScreen } from "./components/ResultScreen";
 import { PowerUnlockCinematic } from "./components/PowerUnlockCinematic";
+import { EvolutionCinematic } from "./components/EvolutionCinematic";
 import { levelForPoints } from "./logic/playerLevel";
-import { didEvolve } from "./logic/evolution";
+import { currentEvolution, didEvolve } from "./logic/evolution";
 import { consumeItem } from "./logic/shop";
 
 const LEVELS = levelsData as Level[];
@@ -39,6 +40,12 @@ type Screen =
       points: number;
       leveledUpTo?: { level: number; title: string };
       evolution?: { pokemonId: number; name: string } | null;
+    }
+  | {
+      name: "evolution";
+      from: { pokemonId: number; name: string };
+      to: { pokemonId: number; name: string };
+      next: Screen;
     };
 
 const NO_EFFECTS: ConsumableEffects = {
@@ -126,26 +133,36 @@ export default function App() {
         ? POWERS.find((p) => p.id === level.unlocksPower)
         : undefined;
 
-    if (newPower) {
+    const nextScreen: Screen = newPower
+      ? {
+          name: "unlock",
+          power: newPower,
+          nextLevelId: level.id,
+          stars,
+          points,
+          leveledUpTo,
+          evolution,
+        }
+      : {
+          name: "result",
+          outcome: "win",
+          levelId: level.id,
+          stars,
+          points,
+          leveledUpTo,
+          evolution,
+        };
+
+    if (evolution) {
+      const fromForm = currentEvolution(profile.starterPokemonId, beforeLv);
       setScreen({
-        name: "unlock",
-        power: newPower,
-        nextLevelId: level.id,
-        stars,
-        points,
-        leveledUpTo,
-        evolution,
+        name: "evolution",
+        from: { pokemonId: fromForm.pokemonId, name: fromForm.name },
+        to: evolution,
+        next: nextScreen,
       });
     } else {
-      setScreen({
-        name: "result",
-        outcome: "win",
-        levelId: level.id,
-        stars,
-        points,
-        leveledUpTo,
-        evolution,
-      });
+      setScreen(nextScreen);
     }
   }
 
@@ -210,6 +227,19 @@ export default function App() {
         onWin={handleWin}
         onLose={handleLose}
         onRun={() => setScreen({ name: "map" })}
+      />
+    );
+  }
+
+  if (screen.name === "evolution") {
+    const next = screen.next;
+    return (
+      <EvolutionCinematic
+        fromPokemonId={screen.from.pokemonId}
+        toPokemonId={screen.to.pokemonId}
+        fromName={screen.from.name}
+        toName={screen.to.name}
+        onDone={() => setScreen(next)}
       />
     );
   }
