@@ -1,5 +1,8 @@
+import { currentEvolution } from "../logic/evolution";
+
 interface Props {
   starterPokemonId?: number;
+  trainerLevel?: number;
   label?: string;
   armed?: boolean;
   hitFlash?: boolean;
@@ -8,9 +11,17 @@ interface Props {
 
 const DEFAULT_STARTER_ID = 25; // Pikachu — fallback for legacy saves.
 
-export function PlayerAvatar({ starterPokemonId, label = "You", armed, hitFlash, cosmetics = [] }: Props) {
+export function PlayerAvatar({
+  starterPokemonId,
+  trainerLevel = 1,
+  label = "You",
+  armed,
+  hitFlash,
+  cosmetics = [],
+}: Props) {
   const id = starterPokemonId ?? DEFAULT_STARTER_ID;
-  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+  const evo = currentEvolution(id, trainerLevel);
+  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${evo.pokemonId}.png`;
   const hasTopHat = cosmetics.includes("topHat");
   const hasCrown = cosmetics.includes("crown");
   const hasShinyStar = cosmetics.includes("shinyStar");
@@ -53,7 +64,7 @@ export function PlayerAvatar({ starterPokemonId, label = "You", armed, hitFlash,
         )}
         <img
           src={spriteUrl}
-          alt="Player avatar"
+          alt={`${evo.name} avatar`}
           loading="lazy"
           draggable={false}
           className={[
@@ -63,6 +74,12 @@ export function PlayerAvatar({ starterPokemonId, label = "You", armed, hitFlash,
           // Mirror so the player faces the opponent (top-right of the field).
           style={{ transform: "scaleX(-1)" }}
         />
+      </div>
+      <div
+        data-testid="player-avatar-name"
+        className="bg-white border-[3px] border-slate-900 rounded-md px-2 py-0.5 font-mono text-slate-900 text-[10px] sm:text-xs font-bold uppercase tracking-wide"
+      >
+        {evo.name}
       </div>
       <div className="bg-white border-[3px] border-slate-900 rounded-md shadow-[3px_3px_0_#0f172a] px-3 py-1 font-mono text-slate-900 text-sm font-bold uppercase tracking-wide whitespace-nowrap">
         {label}

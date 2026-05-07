@@ -268,6 +268,7 @@ export function BattleScreen({
           <div className="relative">
             <PlayerAvatar
               starterPokemonId={starterPokemonId}
+              trainerLevel={trainerLevel}
               label={playerLabel}
               armed={state.armedPowerId !== null}
               hitFlash={kidHitFlash}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Grade, Level, Profile } from "../types";
 import { isLevelUnlocked, nextPlayableLevel } from "../logic/levelUnlock";
 import { levelForPoints } from "../logic/playerLevel";
+import { currentEvolution } from "../logic/evolution";
 import { regionForTopic } from "../data/regions";
 import { SettingsPanel } from "./SettingsPanel";
 import { MuteToggle } from "./MuteToggle";
@@ -89,7 +90,8 @@ export function LevelSelect({ levels, profile, onSelect, onChangeGrade, onProfil
 
   // Trainer parks next to the next playable tile, or at L12 if everything is done.
   const trainerLevelId = next ?? levels.length;
-  const trainerSprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${profile.starterPokemonId}.png`;
+  const trainerEvolution = currentEvolution(profile.starterPokemonId, trainerLevel);
+  const trainerSprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${trainerEvolution.pokemonId}.png`;
 
   return (
     <div className="p-4 sm:p-6 relative min-h-full bg-gradient-to-b from-sky-300 via-sky-100 to-amber-100">
